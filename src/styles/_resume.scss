@@ -1,0 +1,129 @@
+$resume-gray: #4c4c4c;
+$resume-bg: rgba(blue, .1);
+
+.aaron-cordova-resume {
+  color: $resume-gray;
+  font-family: 'Open Sans';
+}
+
+.page {
+  background: radial-gradient(circle at bottom right, $resume-bg, transparent);
+  overflow: hidden;
+  width: 8.5in;
+  height: 11in;
+  margin: 3rem auto;
+}
+
+
+////////////////////
+// GENERIC THINGS //
+////////////////////
+
+.flex-grow {
+  flex: 1;
+}
+
+
+////////////
+// HEADER //
+////////////
+
+.name {
+  left: -1rem;
+  top: -1rem;
+  line-height: .8;
+}
+
+
+//////////
+// BODY //
+//////////
+
+.right-side {
+  p {
+    margin: .5em 0 0;
+    line-height: 1.25;
+  }
+
+  h2 {
+    margin-bottom: .7rem;
+  }
+
+  h4 {
+    margin-top: .7rem;
+  }
+}
+
+
+//////////////
+// TIMELINE //
+//////////////
+
+.timeline {
+  @extend .mr3;
+  padding-top: 2rem;
+  background: $black-20;
+  width: .1875rem;
+  position: relative;
+
+  &.first {
+    padding-top: 0;
+    margin-top: 2rem;
+  }
+
+  &.last {
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+
+  &:after {
+    content: '';
+    width: .75rem;
+    height: .75rem;
+    position: absolute;
+    background: #7c7c7c;
+    border-radius: 50%;
+    transform: translate(calc(-50% + .09375rem), -50%);
+  }
+}
+
+////////////////
+// TOP SKILLS //
+////////////////
+
+.bar {
+  height: .1875rem;
+  background: linear-gradient(to right, transparent 50%, $black-10 50%);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.total-bar {
+  background: linear-gradient(to right, rgba($resume-gray, .2), $resume-gray);
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+
+  &.javascript {
+    width: 95%;
+  }
+}
+
+
+///////////
+// PRINT //
+///////////
+
+@media print {
+  .page {
+    margin: 0 auto;
+    page-break-after: always;
+  }
+}
