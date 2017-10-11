@@ -242,7 +242,7 @@ const page1 = () => {
                 <div className='normal'>Front End Engineer</div>
               </div>
               <div className='i'>May 2017 &ndash; present</div>
-              <p><span className='i normal'>Leading the revolution (and modernization) of the multi-billion dollar shipping industry.</span> I owned large portions of our React app and cross collaborated with our data science team on numerous occasions. Took part in our very first "swat" team and deployed production code daily.</p>
+              <p><span className='i normal'>Leading the revolution (and modernization) of the multi-billion dollar shipping industry.</span> I owned large portions of our React app and cross collaborated with our data science team on numerous occasions. Lead front end work for our "swat" team and deployed production code daily. Tested in Jest and Nightwatch.</p>
 
               <div className='flex items-center justify-between mt3 mb1'>
                 <div className='b'>L2, INC</div>
