@@ -14,7 +14,7 @@ import {
 // https://goo.gl/MrXVRS - micro UUID!
 const uuid = a=>a?(a^Math.random()*16>>a/4).toString(16):([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g,uuid);
 
-const page1 = () => {
+const Page1 = () => {
   const iconStyles = { width: '1.5em', height: '1.5em' };
   const fill = '#4c4c4c';
 
@@ -120,7 +120,7 @@ const page1 = () => {
                 <Toolbox style={iconStyles} fill={fill} />
               </a>
               <div className='flex-grow tr'>
-                <a target='_blank' href='https://github.com/qodesmith/qode-creative-starter-kit'>Qode Creative Starter Kit</a>
+                <a target='_blank' href='https://github.com/qodesmith/create-new-app'>Create New App</a>
               </div>
             </div>
 
@@ -165,7 +165,8 @@ const page1 = () => {
             <div className='timeline first'></div>
             <div className='info flex-grow'>
               <h2>INTRODUCTION</h2>
-              <p>Hi, I'm Aaron and I'm all-things JavaScript! I create, I build, and I conquer. I legit love developing things for the web and solving problems with code. If it's a pixel off, I can't sleep. If it's inefficient, I'm refactoring it. Functional programming for the win!</p>
+              <p>What I'm playing with: <br /> [ es6+, react, redux, webpack, node, cypress ]</p>
+              <p>Hi, I'm Aaron and I'm all-things JavaScript! I solve problems with code & deploy to production daily. Functional programming for the win!</p>
             </div>
           </section>
 
@@ -198,7 +199,7 @@ const page1 = () => {
                 <div className='w-30'>Redux</div>
                 <div className='relative flex-grow'>
                   <div className='bar range-bar w-100'></div>
-                  <div className='bar total-bar w-50'></div>
+                  <div className='bar total-bar w-75'></div>
                 </div>
               </div>
 
@@ -242,14 +243,14 @@ const page1 = () => {
                 <div className='normal'>Front End Engineer</div>
               </div>
               <div className='i'>May 2017 &ndash; present</div>
-              <p><span className='i normal'>Leading the revolution (and modernization) of the multi-billion dollar shipping industry.</span> I owned large portions of our React app and cross collaborated with our data science team on numerous occasions. Lead front end work for our "swat" team and deployed production code daily. Tested in Jest and Nightwatch.</p>
+              <p><span className='i normal'>Leading the revolution (and modernization) of the multi-billion dollar shipping industry.</span> I created a custom React app generator in Node which is used to create <span className='i'>all</span> our internal applications as well as fast prototyping. Lead front end work for our "swat" team and deployed production code daily. Testing with Cypress.</p>
 
               <div className='flex items-center justify-between mt3 mb1'>
                 <div className='b'>L2, INC</div>
                 <div className='normal'>Front End Developer</div>
               </div>
               <div className='i'>June 2016 &ndash; May 2017</div>
-              <p><span className='i normal'>Measuring the immeasurable when it comes to insights on the digital performance of brands.</span> So much data! I initiated - and built from the ground up - a completely new way for the company to manually input collected data. Migrated away from Excel in favor of Google Sheets via their API and Apps Script, allowing off-shore teams to participate with minimal supervision.</p>
+              <p><span className='i normal'>Measuring the immeasurable &mdash; gaining insights on the digital performance of brands.</span> So much data! I initiated - and built from the ground up - a completely new way for the company to manually input collected data. Migrated away from Excel in favor of Google Sheets via their API and Apps Script, allowing off-shore teams to participate with minimal supervision.</p>
 
               <div className='flex items-center justify-between mt3 mb1'>
                 <div className='b'>Accenture</div>
@@ -269,7 +270,6 @@ const page1 = () => {
                 </div>
               </div>
 
-
             </div>
           </section>
         </div>
@@ -278,8 +278,6 @@ const page1 = () => {
   );
 };
 
-const resume = () => [
-  page1()
-];
+const Resume = () => <Page1 />; // Return an array if we end up with multiple pages.
 
-export default resume;
+export default Resume;
