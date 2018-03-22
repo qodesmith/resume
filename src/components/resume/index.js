@@ -199,7 +199,7 @@ const Page1 = () => {
                 <div className='w-30'>Redux</div>
                 <div className='relative flex-grow'>
                   <div className='bar range-bar w-100'></div>
-                  <div className='bar total-bar w-75'></div>
+                  <div className='bar total-bar w-80'></div>
                 </div>
               </div>
 
@@ -208,7 +208,7 @@ const Page1 = () => {
                 <div className='w-30'>Webpack</div>
                 <div className='relative flex-grow'>
                   <div className='bar range-bar w-100'></div>
-                  <div className='bar total-bar w-70'></div>
+                  <div className='bar total-bar w-75'></div>
                 </div>
               </div>
 
@@ -217,7 +217,7 @@ const Page1 = () => {
                 <div className='w-30'>Node</div>
                 <div className='relative flex-grow'>
                   <div className='bar range-bar w-100'></div>
-                  <div className='bar total-bar w-60'></div>
+                  <div className='bar total-bar w-70'></div>
                 </div>
               </div>
 
@@ -226,7 +226,7 @@ const Page1 = () => {
                 <div className='w-30'>MongoDB</div>
                 <div className='relative flex-grow'>
                   <div className='bar range-bar w-100'></div>
-                  <div className='bar total-bar w-75'></div>
+                  <div className='bar total-bar w-70'></div>
                 </div>
               </div>
             </div>
