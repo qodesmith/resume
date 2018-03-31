@@ -166,7 +166,7 @@ const Page1 = () => {
             <div className='info flex-grow'>
               <h2>INTRODUCTION</h2>
               <p>What I'm playing with: <br /> [ es6+, react, redux, webpack, node, cypress ]</p>
-              <p>Hi, I'm Aaron and I'm all-things JavaScript! I solve problems with code & deploy to production daily. Functional programming for the win!</p>
+              <p>Hi, I'm Aaron and I'm all-things JavaScript! I solve problems with code & deploy to production daily. Functional programming! <span className='i'>Readbility > Complexity</span></p>
             </div>
           </section>
 
