@@ -165,7 +165,7 @@ const Page1 = () => {
             <div className='timeline first'></div>
             <div className='info flex-grow'>
               <h2>INTRODUCTION</h2>
-              <p>What I'm playing with: <br /> [ es6+, react, redux, webpack, node, cypress ]</p>
+              <p>What I'm playing with: <br /> [ es6+, react, redux, webpack, node, scss, cypress ]</p>
               <p>Hi, I'm Aaron and I'm all-things JavaScript! I solve problems with code & deploy to production daily. Functional programming! <span className='i'>Readability > Complexity</span></p>
             </div>
           </section>
