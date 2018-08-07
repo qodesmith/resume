@@ -21,7 +21,7 @@ const Page1 = () => {
   return (
     <div key={uuid()} className='h-100 flex flex-column fw1 page'>
       <header className='flex'>
-        <div className='name relative f-5 fw9 ttu'>
+        <div className='name relative f-4-5rem fw9 ttu'>
           <div>Aaron</div>
           <div>Cordova</div>
           {/*<img className='db aaron' src='graff_aaron.png' />
@@ -30,7 +30,7 @@ const Page1 = () => {
         <div className='flex-grow ttu tracked-mega self-center tc'>JavaScript Developer</div>
       </header>
 
-      <div className='body flex flex-grow nt3'>
+      <div className='body flex flex-grow nt4'>
 
         {/* LEFT SIDE*/}
         <div className='left-side w-40 flex flex-column justify-center'>
@@ -165,8 +165,8 @@ const Page1 = () => {
             <div className='timeline first'></div>
             <div className='info flex-grow'>
               <h2>INTRODUCTION</h2>
-              <p>What I'm playing with: <br /> [ es6+, react, redux, webpack, node, scss, cypress ]</p>
-              <p>Hi, I'm Aaron and I'm all-things JavaScript! I solve problems with code & deploy to production daily. Functional programming! <span className='i'>Readability > Complexity</span></p>
+              <p className='b'>[ es6+, react, redux, webpack, node, scss, cypress ]</p>
+              <p>Hi, I'm Aaron and I'm all-things JavaScript! I solve problems with code & deploy to production daily. I maintain a few OSS libraries and occasionally give tech talks. Functional programming for the win! <span className='i'>Readability > Complexity</span></p>
             </div>
           </section>
 
@@ -239,28 +239,35 @@ const Page1 = () => {
               <h2>EXPERIENCE</h2>
 
               <div className='flex items-center justify-between mb1'>
+                <div className='b'>BLOOMBERG, LP</div>
+                <div className='normal'>Senior Front End Engineer</div>
+              </div>
+              <div className='i'>June 2018 &ndash; present</div>
+              <p><span className="i normal">KYC - Entity Intelligence</span> Using React, SSR, and Node to maintain applications related to financial data management. Part of an agile team releasing bi-weekly to production.</p>
+
+              <div className='flex items-center justify-between mt3 mb1'>
                 <div className='b'>TRANSFIX</div>
                 <div className='normal'>Front End Engineer</div>
               </div>
-              <div className='i'>May 2017 &ndash; present</div>
-              <p><span className='i normal'>Leading the revolution (and modernization) of the multi-billion dollar shipping industry.</span> I created a custom React app generator in Node which is used to create <span className='i'>all</span> our internal applications as well as fast prototyping. Lead front end work for our "swat" team and deployed production code daily. Testing with Cypress.</p>
+              <div className='i'>May 2017 &ndash; June 2018</div>
+              <p><span className='i normal'>Leading the revolution of the shipping industry.</span> I created a custom React app generator in Node which was used to create <span className='i'>all</span> internal applications as well as fast prototyping. Deployed production code daily. Testing with Cypress.</p>
 
               <div className='flex items-center justify-between mt3 mb1'>
                 <div className='b'>L2, INC</div>
                 <div className='normal'>Front End Developer</div>
               </div>
               <div className='i'>June 2016 &ndash; May 2017</div>
-              <p><span className='i normal'>Measuring the immeasurable &mdash; gaining insights on the digital performance of brands.</span> So much data! I initiated - and built from the ground up - a completely new way for the company to manually input collected data. Migrated away from Excel in favor of Google Sheets via their API and Apps Script, allowing off-shore teams to participate with minimal supervision.</p>
+              <p><span className='i normal'>Measuring the immeasurable &mdash; gaining insights on the digital performance of brands.</span> So much data! Used the Google Sheets API + Apps Script and transformed the way L2 performed manual data collection.</p>
 
               <div className='flex items-center justify-between mt3 mb1'>
                 <div className='b'>Accenture</div>
                 <div className='normal'>Front End Developer</div>
               </div>
               <div className='i'>July 2015 &ndash; June 2016</div>
-              <p><span className='i normal'>Guiding the world's top companies to do what they do best.</span> Wrote code viewed by millions for one of Florida's leading electric companies. Daily stand-up's with distributed teams across the nation and globe. Studied Angular in Mexico!</p>
+              <p><span className='i normal'>Guiding the world's top companies to do what they do best.</span> Wrote code viewed by millions for one of Florida's leading electric companies. Daily stand-up's with distributed teams across the nation and globe.</p>
 
               <div className='flex'>
-                <div className='mr5'>
+                <div className='mr7'>
                   <h4 className='mb1'>Freelance Wordpress Design</h4>
                   <div className='i'>2010 &ndash; 2015</div>
                 </div>
