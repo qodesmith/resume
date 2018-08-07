@@ -15,7 +15,8 @@
   *Note* - you will need the variable files commented out below in order
   to use certain individual Tachyons modules.
 */
-@import 'tachyons'; // Use this to import everything, the below to cherry-pick.
+@import 'tachyons';
+@import '~sassyons'; // Use this to import everything, the below to cherry-pick.
 // @import 'colors'; // Variables.
 // @import 'media-queries'; // Variables.
 
