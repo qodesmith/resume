@@ -31,7 +31,7 @@ const Page1 = () => {
           <img className='db cordova relative' src='graff_cordova.png' />*/}
         </div>
         <div className="flex-grow ttu tracked-mega self-center tc">
-          JavaScript Developer
+          JavaScript Engineer
         </div>
       </header>
 

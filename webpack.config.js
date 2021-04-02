@@ -1,14 +1,13 @@
-const { PORT, NODE_ENV } = process.env
-const isProd = NODE_ENV === 'production';
-const path = require('path');
-const glob = require('glob-all');
-const WebpackCleanupPlugin = require('webpack-cleanup-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const PurifyCSSPlugin = require('purifycss-webpack');
-const webpack = require('webpack');
-const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
-
+const {PORT, NODE_ENV} = process.env
+const isProd = NODE_ENV === 'production'
+const path = require('path')
+const glob = require('glob-all')
+const WebpackCleanupPlugin = require('webpack-cleanup-plugin')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const PurifyCSSPlugin = require('purifycss-webpack')
+const webpack = require('webpack')
+const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin
 
 console.log(`
 
@@ -18,14 +17,12 @@ console.log(`
   |
   +--------------------------------
 
-`);
-
+`)
 
 /*
   https://goo.gl/3BmAqo
   Excellent plain explanation of Webpack stuffs.
 */
-
 
 const webpackConfig = {
   /*
@@ -54,7 +51,7 @@ const webpackConfig = {
       For opening html files directly in the browser,
       set to an empty string - i.e. when no server is really needed.
     */
-    publicPath: ''
+    publicPath: '',
   },
 
   /*
@@ -91,22 +88,22 @@ const webpackConfig = {
                 'env',
                 {
                   targets: {
-                    browsers: 'last 2 versions'
+                    browsers: 'last 2 versions',
                   },
-                  modules: false // Needed for tree shaking to work.
-                }
+                  modules: false, // Needed for tree shaking to work.
+                },
               ],
-              'react' // Calls `babel-preset-react` - makes JSX possible.
+              'react', // Calls `babel-preset-react` - makes JSX possible.
             ],
             plugins: [
               /*
                 https://goo.gl/GKDWnQ, https://goo.gl/8BUXWt
                 Need for certain uses of `...rest`.
               */
-              'transform-object-rest-spread'
-            ]
-          }
-        }
+              'transform-object-rest-spread',
+            ],
+          },
+        },
       },
 
       /*
@@ -127,7 +124,7 @@ const webpackConfig = {
               options: {
                 minimize: isProd,
                 // sourceMap: false
-              }
+              },
             },
 
             /*
@@ -135,7 +132,7 @@ const webpackConfig = {
               Autoprefixer and others (see `postcss.config.js`).
             */
             {
-              loader: 'postcss-loader'
+              loader: 'postcss-loader',
             },
 
             // Loads a scss file and compiles it to css.
@@ -145,11 +142,11 @@ const webpackConfig = {
                 includePaths: [
                   // 'node_modules',
                   'node_modules/tachyons-sass', // For loading the entire Tachyons library.
-                  'node_modules/tachyons-sass/scss' // For loading individual Tachyons components.
-                ]
-              }
-            }
-          ]
+                  'node_modules/tachyons-sass/scss', // For loading individual Tachyons components.
+                ],
+              },
+            },
+          ],
         }),
       },
 
@@ -159,9 +156,7 @@ const webpackConfig = {
       */
       {
         test: /\.(jpg|png|svg|gif)$/,
-        use: [
-          'file-loader'
-        ]
+        use: ['file-loader'],
       },
 
       /*
@@ -170,11 +165,9 @@ const webpackConfig = {
       */
       {
         test: /\.(ttf|otf|woff|woff2|eot)/,
-        use: [
-          'file-loader'
-        ]
-      }
-    ]
+        use: ['file-loader'],
+      },
+    ],
   },
 
   /*
@@ -217,10 +210,7 @@ const webpackConfig = {
       Used instead of `CleanWebpackPlugin` - https://goo.gl/PtC14x
     */
     new WebpackCleanupPlugin({
-      exclude: [
-        'graff_aaron.png',
-        'graff_cordova.png'
-      ]
+      exclude: ['graff_aaron.png', 'graff_cordova.png'],
     }),
 
     /*
@@ -238,16 +228,20 @@ const webpackConfig = {
       This will use the output of the above `ExtractTextPlugin`
       as the asset to purify, searching the files within the paths option.
     */
-    isProd && new PurifyCSSPlugin({
-      minimize: isProd,
-      verbose: true,
-      purifyOptions: { info: true },
-      paths: glob.sync([
-        // path.resolve(__dirname, 'dist/*.html'),
-        // path.resolve(__dirname, 'dist/**/*.css'),
-        path.resolve(__dirname, 'src/**/*.js')
-      ], {nodir: true}) // `nodir` is a glob thing - https://goo.gl/5sLRY1.
-    }),
+    isProd &&
+      new PurifyCSSPlugin({
+        minimize: isProd,
+        verbose: true,
+        purifyOptions: {info: true},
+        paths: glob.sync(
+          [
+            // path.resolve(__dirname, 'dist/*.html'),
+            // path.resolve(__dirname, 'dist/**/*.css'),
+            path.resolve(__dirname, 'src/**/*.js'),
+          ],
+          {nodir: true},
+        ), // `nodir` is a glob thing - https://goo.gl/5sLRY1.
+      }),
 
     /*
       https://goo.gl/og4sNK, https://goo.gl/pwnnmX
@@ -255,14 +249,14 @@ const webpackConfig = {
     */
     new HtmlWebpackPlugin({
       // https://goo.gl/9UFR8u
-      title: 'Aaron Cordova - JavaScript Developer',
+      title: 'Aaron Cordova - JavaScript Engineer',
 
       // Put JS before closing </body> tag & CSS in the <head>.
       inject: true,
 
       // https://goo.gl/pEyuqu, https://goo.gl/uogJeh
       minify: {
-        collapseWhitespace: true
+        collapseWhitespace: true,
       },
 
       /*****************************
@@ -275,14 +269,15 @@ const webpackConfig = {
       mobileThemeColor: 'black',
 
       // <meta> description of the site.
-      description: 'JavaScript === awesomness'
+      description: 'JavaScript === awesomness',
     }),
 
-    isProd && new webpack.DefinePlugin({
-      'process.env': {
-        NODE_ENV: JSON.stringify('production')
-      }
-    }),
+    isProd &&
+      new webpack.DefinePlugin({
+        'process.env': {
+          NODE_ENV: JSON.stringify('production'),
+        },
+      }),
 
     /*
       https://goo.gl/sB6d6b - "For the most efficient webpack production build..."
@@ -296,40 +291,45 @@ const webpackConfig = {
         - https://github.com/webpack/webpack/issues/2867
         - https://github.com/webpack/webpack/issues/4784
     */
-    isProd && new UglifyJsPlugin({ // Minify options: https://goo.gl/3UaFRm
-      compress: { // https://goo.gl/Hn5iiE
-        sequences: 200,
-        properties: true,
-        dead_code: true,
-        drop_debugger: true,
-        conditionals: true,
-        evaluate: true,
-        booleans: true,
-        // typeofs: false, // Throws `unsupported` error.
-        loops: true,
-        unused: true,
-        if_return: true,
-        // inline: true, // Throws `unsupported` error.
-        join_vars: true,
-        reduce_vars: true,
-        warnings: true,
-        negate_iife: true,
-        passes: 2
-      },
-      mangle: { // https://goo.gl/6Aq8DB
-        toplevel: true
-      },
-      output: { // https://goo.gl/Qr5uKx
-        bracketize: false,
-        comments: false,
-        keep_quoted_props: false,
-        preamble: '// Qode Creative - JavaScript awesomeness.',
-        quote_keys: false,
-        quote_style: 0
-      },
-      ie8: false
-    })
-  ].filter(thing => thing)
-};
+    isProd &&
+      new UglifyJsPlugin({
+        // Minify options: https://goo.gl/3UaFRm
+        compress: {
+          // https://goo.gl/Hn5iiE
+          sequences: 200,
+          properties: true,
+          dead_code: true,
+          drop_debugger: true,
+          conditionals: true,
+          evaluate: true,
+          booleans: true,
+          // typeofs: false, // Throws `unsupported` error.
+          loops: true,
+          unused: true,
+          if_return: true,
+          // inline: true, // Throws `unsupported` error.
+          join_vars: true,
+          reduce_vars: true,
+          warnings: true,
+          negate_iife: true,
+          passes: 2,
+        },
+        mangle: {
+          // https://goo.gl/6Aq8DB
+          toplevel: true,
+        },
+        output: {
+          // https://goo.gl/Qr5uKx
+          bracketize: false,
+          comments: false,
+          keep_quoted_props: false,
+          preamble: '// Qode Creative - JavaScript awesomeness.',
+          quote_keys: false,
+          quote_style: 0,
+        },
+        ie8: false,
+      }),
+  ].filter(thing => thing),
+}
 
-module.exports = webpackConfig;
+module.exports = webpackConfig
