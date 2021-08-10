@@ -1,31 +1,19 @@
 /*
   This file will be the top-most entry point for all styles in the app.
   Any dependant styles should be explicitly imported here.
+
+  Import files from the `node_modules` folder by prepending them with "~".
+  To import CSS files from `node_modules`, make sure to include the file extension.
 */
 
-
-/*
-  Tachyons
-  --------
-
-  You can use the entire Tachyons library with `@import 'tachyons'`.
-  To cherry-pick individual Tachyons modules, comment out the library import
-  and use individual imports instead.
-
-  *Note* - you will need the variable files commented out below in order
-  to use certain individual Tachyons modules.
-*/
-@import 'tachyons';
-@import '~sassyons'; // Use this to import everything, the below to cherry-pick.
-// @import 'colors'; // Variables.
-// @import 'media-queries'; // Variables.
-
+// https://github.com/qodesmith/sassyons
+@import 'sassyons/dist/sassyons.css';
 
 /*
   Application Styles
   ------------------
 
   All our application-specific styles will go below.
+  @import each of them in reverse-priority order (bottom = highest priority).
 */
 @import 'global';
-@import 'resume';
