@@ -1,10 +1,16 @@
 {
-  "name": "resume2",
-  "version": "0.1.0",
-  "description": "",
-  "keywords": [],
-  "author": "",
-  "email": "",
+  "name": "resume2aaron-cordova-resume",
+  "version": "1.0.0",
+  "description": "Aaron Cordova - JavaScript Developer resume built with React!",
+  "keywords": [
+    "aaron",
+    "cordova",
+    "qodesmith",
+    "resume",
+    "react"
+  ],
+  "author": "Qodesmith",
+  "email": "theqodesmith@gmail.com",
   "repository": "",
   "license": "ISC",
   "browserslist": [
