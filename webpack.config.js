@@ -423,14 +423,6 @@ module.exports = (env, argv) => ({
   // http://bit.ly/2WEpbgZ
   devServer: {
     /*
-      http://bit.ly/2WHYfwO
-      Tell the dev server where to serve content from.
-      This is only necessary if you want to serve static files.
-      Content not served from Webpack's devServer is served from here.
-    */
-    contentBase: path.resolve(__dirname, 'dist'),
-
-    /*
       http://bit.ly/2WFe8nS
       '...the index.html page will likely have to be served
       in place of any 404 responses.'
@@ -454,12 +446,6 @@ module.exports = (env, argv) => ({
     port: DEV_SERVER_PORT,
 
     /*
-      http://bit.ly/2WIXOSV, http://bit.ly/2WDMWpv
-      Nobody wants to see 0.0.0.0 in the browser. This get's rid of that.
-    */
-    public: `http://localhost:${DEV_SERVER_PORT}`,
-
-    /*
       http://bit.ly/2XlEOXN
       Redirect non-static asset calls to the backend API server.
       Unrecognized urls (non-API calls) will be directed to '/'.
@@ -474,15 +460,15 @@ module.exports = (env, argv) => ({
               if (req.method.toLowerCase() !== 'get') return
 
               /*
-            Proxy url (browser) requests back to '/'
-            and let the front end do all the routing.
-            For all others, let the API server respond.
-          */
+                Proxy url (browser) requests back to '/'
+                and let the front end do all the routing.
+                For all others, let the API server respond.
+              */
 
               /*
-            http://bit.ly/2XlEOXN
-            Url / browser request - allow front end routing to handle all the things.
-          */
+                http://bit.ly/2XlEOXN
+                Url / browser request - allow front end routing to handle all the things.
+              */
               if ((req.headers.accept || '').includes('html')) return '/'
 
               // Let the API server respond by implicitly returning here.
@@ -491,23 +477,19 @@ module.exports = (env, argv) => ({
         }
       : {},
 
-    // https://bit.ly/3nM4mL0
-    watchContentBase: true,
-
     // https://bit.ly/2WQBndb
     hot: true,
-
-    // https://bit.ly/3mIacvB
-    inline: true,
 
     /*
       https://bit.ly/37EzOVO
       We disable both of these because the ReactRefresh plugin will put a
       verbose error on the screen showing where the error occured.
     */
-    overlay: {
-      warnings: false,
-      errors: false,
+    client: {
+      overlay: {
+        warnings: false,
+        errors: false,
+      },
     },
   },
 

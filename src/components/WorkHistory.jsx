@@ -23,6 +23,16 @@ export default function WorkHistory() {
       <TimeLineItem isLast>
         <h1 className="ma0 pl16 pt16 ttu">Experience</h1>
         <WorkHistoryItem
+          company="Coinbase"
+          role="Senior Front End Engineer"
+          date="Oct 2021 - present">
+          <span className="i">
+            Harnessing the power of JavaScript to build a more open financial
+            system.
+          </span>{' '}
+          Fullstack React playing in the crypto ecosystem.
+        </WorkHistoryItem>
+        <WorkHistoryItem
           company="Facebook"
           role="Senior Front End Engineer"
           date="May 2019 – present">
