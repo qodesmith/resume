@@ -25,7 +25,7 @@ export default function InfoCards() {
           }
         />
         <InfoCardItem Icon={Phone} content="917.524.7817" />
-        <InfoCardItem Icon={Location} content="Staten Island, NY" />
+        <InfoCardItem Icon={Location} content="NJ" />
       </InfoCard>
       <InfoCard title="Portfolio">
         <InfoCardItem
@@ -36,14 +36,14 @@ export default function InfoCards() {
             </a>
           }
         />
-        <InfoCardItem
+        {/* <InfoCardItem
           Icon={Website}
           content={
             <a href="http://freestylefam.com" target="_blank">
               freestylefam.com
             </a>
           }
-        />
+        /> */}
       </InfoCard>
       <InfoCard title="Open Source">
         <InfoCardItem
