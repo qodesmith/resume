@@ -35,7 +35,7 @@ export default function WorkHistory() {
         <WorkHistoryItem
           company="Facebook"
           role="Senior Front End Engineer"
-          date="May 2019 – present">
+          date="May 2019 - Sep 2021">
           <span className="i">Make capacity easy to work with at scale.</span> I
           design and build UI's for service owners to easily (&amp; happily)
           manage their backend service. Heavy work with custom forms, APIs, and
@@ -44,7 +44,7 @@ export default function WorkHistory() {
         <WorkHistoryItem
           company="Bloomberg, LP"
           role="Senior Front End Engineer"
-          date="June 2018 – May 2019">
+          date="June 2018 - May 2019">
           <span className="i">KYC - Entity Intelligence.</span> Using React,
           SSR, and Node to maintain applications related to fnancial data
           management. Part of an agile team releasing bi-weekly to production.
@@ -52,7 +52,7 @@ export default function WorkHistory() {
         <WorkHistoryItem
           company="Transfix"
           role="Front End Engineer"
-          date="May 2017 – June 2018">
+          date="May 2017 - June 2018">
           <span className="i">
             Leading the revolution of the shipping industry.
           </span>{' '}
@@ -63,7 +63,7 @@ export default function WorkHistory() {
         <WorkHistoryItem
           company="L2, Inc"
           role="Front End Developer"
-          date="June 2016 – May 2017">
+          date="June 2016 - May 2017">
           <span className="i">
             Measuring the immeasurable — gaining insights on the digital
             performance of brands.
@@ -74,7 +74,7 @@ export default function WorkHistory() {
         <WorkHistoryItem
           company="Accenture"
           role="Front End Developer"
-          date="July 2015 – June 2016">
+          date="July 2015 - June 2016">
           <span className="i">
             Guiding the world's top companies to do what they do best.
           </span>{' '}
