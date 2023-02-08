@@ -35,7 +35,7 @@ export default function WorkHistory() {
         <WorkHistoryItem
           company="Facebook"
           role="Senior Front End Engineer"
-          date="May 2019 - Sep 2021">
+          date="May 2019 - Oct 2021">
           <span className="i">Make capacity easy to work with at scale.</span> I
           design and build UI's for service owners to easily (&amp; happily)
           manage their backend service. Heavy work with custom forms, APIs, and
