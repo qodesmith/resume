@@ -3,7 +3,7 @@ import {Fragment} from 'react'
 const skillz = [
   'JavaScript',
   'React',
-  'Recoil',
+  'Jotai',
   'Webpack',
   'Node',
   'MongoDB',
