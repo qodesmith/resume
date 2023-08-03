@@ -30,7 +30,8 @@ export default function WorkHistory() {
             Harnessing the power of JavaScript to build a more open financial
             system.
           </span>{' '}
-          Fullstack React playing in the crypto ecosystem.
+          Fullstack React (Next.js, Node, Jotai) playing in the crypto
+          ecosystem.
         </WorkHistoryItem>
         <WorkHistoryItem
           company="Facebook"
