@@ -89,16 +89,22 @@ export default function InfoCards() {
         <InfoCardItem
           content={
             <>
-              <div className="b">General Assembly</div>
-              <div className="ml8">Full stack coding bootcamp</div>
+              <div className="b">
+                <a href="https://generalassemb.ly">General Assembly</a>
+              </div>
+              <div className="i f-0-8em">Full stack coding bootcamp</div>
             </>
           }
         />
         <InfoCardItem
           content={
             <>
-              <div className="b">Institute of Audio Research</div>
-              <div className="ml8">Digital audio recording</div>
+              <div className="b">
+                <a href="https://en.wikipedia.org/wiki/Institute_of_Audio_Research">
+                  Institute of Audio Research
+                </a>
+              </div>
+              <div className="i f-0-8em">Digital audio recording</div>
             </>
           }
         />
@@ -106,7 +112,7 @@ export default function InfoCards() {
           content={
             <>
               <div className="b">The Cittone Institute</div>
-              <div className="ml8">Analog and digital circuitry</div>
+              <div className="i f-0-8em">Analog and digital circuitry</div>
             </>
           }
         />
@@ -114,7 +120,7 @@ export default function InfoCards() {
           content={
             <>
               <div className="b">The School of Hard Knocks</div>
-              <div className="ml8">Life wisdom from the pavement</div>
+              <div className="i f-0-8em">Life wisdom from the pavement</div>
             </>
           }
         />

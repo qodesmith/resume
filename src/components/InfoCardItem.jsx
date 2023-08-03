@@ -6,7 +6,7 @@ export default function InfoCardItem({Icon, content, subtext}) {
     <div className="pb12">
       <div className="df">
         {Icon && <Icon style={iconStyle} fill="#4c4c4c" />}
-        <div style={contentStyle}>{content}</div>
+        <div style={Icon && contentStyle}>{content}</div>
       </div>
       {subtext && <div className="i f-0-8em">{subtext}</div>}
     </div>
