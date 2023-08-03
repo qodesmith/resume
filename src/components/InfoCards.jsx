@@ -8,6 +8,7 @@ import {
   Toolbox,
   Calendar,
   Css,
+  LinkedIn,
 } from './Icons'
 import InfoCard from './InfoCard'
 import InfoCardItem from './InfoCardItem'
@@ -25,6 +26,12 @@ export default function InfoCards() {
           }
         />
         <InfoCardItem Icon={Phone} content="917.524.7817" />
+        <InfoCardItem
+          Icon={LinkedIn}
+          content={
+            <a href="https://www.linkedin.com/in/cordovaaaron/">LinkedIn</a>
+          }
+        />
         <InfoCardItem Icon={Location} content="NJ" />
       </InfoCard>
       <InfoCard title="Portfolio">
