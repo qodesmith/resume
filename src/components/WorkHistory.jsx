@@ -9,24 +9,29 @@ export default function WorkHistory() {
       {/* INTRODUCTION */}
       <TimeLineItem>
         <InfoCard title="Introduction">
-          Hi, I'm Aaron and I'm all-things JavaScript! I solve problems with
-          code &amp; deploy to production daily. I maintain a few OSS libraries
-          and occasionally{' '}
-          <a href="https://youtu.be/7FRHuVNVCj4?t=661" className="royalblue">
-            give
-          </a>{' '}
-          <a
-            href="https://www.youtube.com/watch?v=qDnOuV57TkY"
-            className="royalblue">
-            tech
-          </a>{' '}
-          <a
-            href="https://www.youtube.com/watch?v=Cjt3q5hr-tw"
-            className="royalblue">
-            talks
-          </a>
-          . Functional programming for the win.{' '}
-          <span className="i">Readability &gt; Complexity</span>
+          <div className="f-0-9em">
+            Hi, I'm Aaron and I'm all-things JavaScript! I'm interested in
+            learning AI/ML, solving problems with code, Hip-Hop, &amp;
+            woodworking. I maintain a few OSS libraries and occasionally{' '}
+            <a href="https://youtu.be/7FRHuVNVCj4?t=661" className="royalblue">
+              give
+            </a>{' '}
+            <a
+              href="https://www.youtube.com/watch?v=qDnOuV57TkY"
+              className="royalblue">
+              tech
+            </a>{' '}
+            <a
+              href="https://www.youtube.com/watch?v=Cjt3q5hr-tw"
+              className="royalblue">
+              talks
+            </a>
+            .
+            <div className="mt4">
+              Functional programming for the win.{' '}
+              <span className="i">Readability &gt; Complexity</span>
+            </div>
+          </div>
         </InfoCard>
       </TimeLineItem>
 

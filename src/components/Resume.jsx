@@ -6,7 +6,7 @@ export default function Resume() {
   return (
     <div className="letter-paper-size page overflow-h mha mv64 relative df align-items-end">
       <Header />
-      <div className="df align-items-center pb16 relative">
+      <div className="df align-items-center pb8 relative">
         <WorkHistory />
         <div className="divider" />
         <InfoCards />
