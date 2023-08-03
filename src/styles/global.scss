@@ -59,28 +59,12 @@ a {
   letter-spacing: 0.25em;
 }
 
-.timeline-item {
-  &:before {
-    content: '';
-    background: rgba(0, 0, 0, 0.2);
-    width: 0.1875rem;
-    height: 100%;
-    position: absolute;
-  }
-
-  &.last {
-    &:before {
-      border-bottom-left-radius: 50%;
-      border-bottom-right-radius: 50%;
-    }
-  }
-
-  &.first {
-    &:before {
-      height: calc(100% - 2rem);
-      margin-top: 2rem;
-    }
-  }
+.divider {
+  background: rgba(0, 0, 0, 0.2);
+  width: 0.6rem;
+  align-self: stretch;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
 }
 
 @media print {
