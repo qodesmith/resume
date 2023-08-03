@@ -1,11 +1,7 @@
-import {cn} from 'helpers'
-
-export default function TimeLineItem({children, isLast, isFirst}) {
+export default function TimeLineItem({children}) {
   return (
     <div className="relative">
-      <div className={cn('timeline-item', {last: isLast, first: isFirst})}>
-        {children}
-      </div>
+      <div>{children}</div>
     </div>
   )
 }

@@ -6,7 +6,8 @@ import WorkHistoryItem from './WorkHistoryItem'
 export default function WorkHistory() {
   return (
     <section className="work-history">
-      <TimeLineItem isFirst>
+      {/* INTRODUCTION */}
+      <TimeLineItem>
         <InfoCard title="Introduction">
           Hi, I'm Aaron and I'm all-things JavaScript! I solve problems with
           code &amp; deploy to production daily. I maintain a few OSS libraries
@@ -28,13 +29,16 @@ export default function WorkHistory() {
           <span className="i">Readability &gt; Complexity</span>
         </InfoCard>
       </TimeLineItem>
+
+      {/* TOP SKILLS */}
       <TimeLineItem>
         <InfoCard title="Top Skills">
           <Skillz />
         </InfoCard>
       </TimeLineItem>
 
-      <TimeLineItem isLast>
+      {/* EXPERIENCE */}
+      <TimeLineItem>
         <h1 className="ma0 pl16 pt16 ttu">Experience</h1>
         <WorkHistoryItem
           company="Coinbase"

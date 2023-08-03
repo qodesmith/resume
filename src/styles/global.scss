@@ -67,6 +67,16 @@ a {
   border-bottom-right-radius: 50%;
 }
 
+.work-history-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.1));
+}
+
 @media print {
   .page {
     margin: 0 auto;
