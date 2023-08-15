@@ -11,7 +11,7 @@ export default function WorkHistory() {
         <InfoCard title="Introduction">
           <div className="f-0-9em">
             Hi, I'm Aaron and I'm all-things JavaScript! I'm interested in
-            learning AI/ML, solving problems with code, Hip-Hop, &amp;
+            solving problems with code, learning AI/ML, Hip-Hop, &amp;
             woodworking. I maintain a few OSS libraries and occasionally{' '}
             <a href="https://youtu.be/7FRHuVNVCj4?t=661" className="royalblue">
               give
