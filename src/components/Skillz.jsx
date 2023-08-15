@@ -4,7 +4,7 @@ const skillz = [
   'JavaScript',
   'React',
   'Jotai',
-  'Webpack',
+  'Vite',
   'Node',
   'MongoDB',
   'SCSS',
