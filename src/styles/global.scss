@@ -63,6 +63,8 @@ a {
   background: rgba(0, 0, 0, 0.2);
   width: 0.6rem;
   align-self: stretch;
+  border-top-left-radius: 0.125em;
+  border-top-right-radius: 0.125em;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
 }
