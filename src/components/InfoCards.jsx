@@ -15,7 +15,7 @@ import InfoCardItem from './InfoCardItem'
 
 export default function InfoCards() {
   return (
-    <section className="w-40 flex-shrink-0">
+    <section className="flex-shrink-0">
       <InfoCard title="Contact">
         <InfoCardItem
           Icon={Email}
