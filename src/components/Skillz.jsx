@@ -1,14 +1,6 @@
 import {Fragment} from 'react'
 
-const skillz = [
-  'JavaScript',
-  'React',
-  'Jotai',
-  'Vite',
-  'Node',
-  'MongoDB',
-  'SCSS',
-]
+const skillz = ['React', 'Jotai ❤️', 'Vite', 'Node', 'MongoDB', 'SCSS']
 
 export default function Skillz() {
   return skillz.map((skill, i) => {
