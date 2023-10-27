@@ -15,7 +15,7 @@ import Skillz from './Skillz'
 
 export default function InfoCards() {
   return (
-    <section className="flex-shrink-0 w-40">
+    <section className="flex-shrink-0">
       {/* TOP SKILLS */}
       <InfoCard title="Top Skills">
         <Skillz />
