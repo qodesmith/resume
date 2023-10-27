@@ -3,7 +3,6 @@ import {
   Phone,
   Location,
   Github,
-  Website,
   Typewriter,
   Toolbox,
   Calendar,
@@ -12,11 +11,24 @@ import {
 } from './Icons'
 import InfoCard from './InfoCard'
 import InfoCardItem from './InfoCardItem'
+import Skillz from './Skillz'
 
 export default function InfoCards() {
   return (
-    <section className="flex-shrink-0">
+    <section className="flex-shrink-0 w-40">
+      {/* TOP SKILLS */}
+      <InfoCard title="Top Skills">
+        <Skillz />
+      </InfoCard>
       <InfoCard title="Contact">
+        <InfoCardItem
+          Icon={Github}
+          content={
+            <a href="https://github.com/qodesmith" target="_blank">
+              github.com/qodesmith
+            </a>
+          }
+        />
         <InfoCardItem
           Icon={Email}
           content={
@@ -33,24 +45,6 @@ export default function InfoCards() {
           }
         />
         <InfoCardItem Icon={Location} content="NJ" />
-      </InfoCard>
-      <InfoCard title="Portfolio">
-        <InfoCardItem
-          Icon={Github}
-          content={
-            <a href="https://github.com/qodesmith" target="_blank">
-              github.com/qodesmith
-            </a>
-          }
-        />
-        {/* <InfoCardItem
-          Icon={Website}
-          content={
-            <a href="http://freestylefam.com" target="_blank">
-              freestylefam.com
-            </a>
-          }
-        /> */}
       </InfoCard>
       <InfoCard title="Open Source">
         <InfoCardItem

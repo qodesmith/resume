@@ -1,5 +1,4 @@
 import InfoCard from './InfoCard'
-import Skillz from './Skillz'
 import WorkHistoryItem from './WorkHistoryItem'
 
 export default function WorkHistory() {
@@ -30,11 +29,6 @@ export default function WorkHistory() {
             <span className="i">Readability &gt; Complexity</span>
           </div>
         </div>
-      </InfoCard>
-
-      {/* TOP SKILLS */}
-      <InfoCard title="Top Skills">
-        <Skillz />
       </InfoCard>
 
       {/* EXPERIENCE */}

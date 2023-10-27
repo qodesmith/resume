@@ -1,19 +1,37 @@
 import {Fragment} from 'react'
 
-const skillz = ['React', 'Jotai ❤️', 'Vite', 'Node', 'MongoDB', 'SCSS']
+const frontEndSkillz = ['React', 'Jotai ❤️', 'Vite', 'Next.js', 'SCSS']
+const backEndSkillz = ['Node', 'MongoDB']
 
 export default function Skillz() {
-  return skillz.map((skill, i) => {
-    // The last skill doesn't get a bullet point after it.
-    if (i === skillz.length - 1) {
-      return <span key={i}>{skill}</span>
-    }
+  return (
+    <>
+      <SkillSet type="FE" skills={frontEndSkillz} />
+      <SkillSet type="BE" skills={backEndSkillz} />
+    </>
+  )
+}
 
-    return (
-      <Fragment key={i}>
-        <span>{skill}</span>
-        <span className="mh4">•</span>
-      </Fragment>
-    )
-  })
+function SkillSet({skills, type}) {
+  return (
+    <div className="df">
+      {skills.map((skill, i) => {
+        // The last skill doesn't get a bullet point after it.
+        if (i === skills.length - 1) {
+          return (
+            <div className="ws-nowrap" key={i}>
+              {skill}
+            </div>
+          )
+        }
+
+        return (
+          <Fragment key={i}>
+            <div className="ws-nowrap">{skill}</div>
+            <div className="mh4">•</div>
+          </Fragment>
+        )
+      })}
+    </div>
+  )
 }
