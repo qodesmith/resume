@@ -1,7 +1,7 @@
 import {Fragment} from 'react'
 
-const frontEndSkillz = ['React', 'Jotai ❤️', 'Vite', 'Next.js', 'SCSS']
-const backEndSkillz = ['Node', 'MongoDB']
+const frontEndSkillz = ['React', 'Jotai ❤️', 'Vite', 'Next.js']
+const backEndSkillz = ['Node', 'Bun', 'MongoDB']
 
 export default function Skillz() {
   return (
