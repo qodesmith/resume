@@ -8,7 +8,7 @@ export default function Header() {
         <img className='db cordova relative' src='graff_cordova.png' /> */}
       </div>
       <div className="flex-grow-1 ttu role align-self-center tc">
-        JavaScript Engineer
+        Front End Engineer
       </div>
     </header>
   )
