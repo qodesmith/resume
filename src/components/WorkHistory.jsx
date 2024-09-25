@@ -9,21 +9,29 @@ export default function WorkHistory() {
         <div className="f-0-9em">
           Hi, I'm Aaron and I'm all-things JavaScript! I have an obsession for
           customer delight, pixels perfection, &amp; can't stop exploring and{' '}
-          <a href="https://beats.aaroncordova.dev" target="_blank">
+          <a
+            href="https://beats.aaroncordova.dev"
+            className="royalblue"
+            target="_blank">
             building
           </a>{' '}
           things. I've occassionally{' '}
-          <a href="https://youtu.be/7FRHuVNVCj4?t=661" className="royalblue">
+          <a
+            href="https://youtu.be/7FRHuVNVCj4?t=661"
+            className="royalblue"
+            target="_blank">
             given
           </a>{' '}
           <a
             href="https://www.youtube.com/watch?v=qDnOuV57TkY"
-            className="royalblue">
+            className="royalblue"
+            target="_blank">
             tech
           </a>{' '}
           <a
             href="https://www.youtube.com/watch?v=Cjt3q5hr-tw"
-            className="royalblue">
+            className="royalblue"
+            target="_blank">
             talks
           </a>{' '}
           😎
@@ -36,6 +44,8 @@ export default function WorkHistory() {
 
       {/* EXPERIENCE */}
       <h1 className="ma0 pl16 pt16 ttu">Experience</h1>
+
+      {/* DOCKER */}
       <WorkHistoryItem
         company="Docker"
         role="Senior Front End Engineer"
@@ -44,6 +54,8 @@ export default function WorkHistory() {
         and building features for Docker Desktop (Electron). Working on an
         internal product bringing Docker to the cloud.
       </WorkHistoryItem>
+
+      {/* COINBASE */}
       <WorkHistoryItem
         company="Coinbase"
         role="Senior Front End Engineer"
@@ -52,8 +64,11 @@ export default function WorkHistory() {
           Harnessing the power of JavaScript to build a more open financial
           system.
         </span>{' '}
-        Fullstack React (Next.js, Node, Jotai) playing in the crypto ecosystem.
+        Built "Coinbase Pay" - an onramp Crypto solution using fullstack React.
+        Next.js, Node, Jotai, and GraphQL.
       </WorkHistoryItem>
+
+      {/* FACEBOOK */}
       <WorkHistoryItem
         company="Facebook"
         role="Senior Front End Engineer"
@@ -63,6 +78,8 @@ export default function WorkHistory() {
         manage their backend service. Heavy work with custom forms, APIs, and
         data transformation.
       </WorkHistoryItem>
+
+      {/* BLOOMBERG */}
       <WorkHistoryItem
         company="Bloomberg, LP"
         role="Senior Front End Engineer"
@@ -71,6 +88,8 @@ export default function WorkHistory() {
         and Node to maintain applications related to fnancial data management.
         Part of an agile team releasing bi-weekly to production.
       </WorkHistoryItem>
+
+      {/* TRANFIX */}
       <WorkHistoryItem
         company="Transfix"
         role="Front End Engineer"
@@ -82,6 +101,8 @@ export default function WorkHistory() {
         all internal applications as well as fast prototyping. Deployed
         production code daily. Testing with Cypress.
       </WorkHistoryItem>
+
+      {/* L2, INC */}
       <WorkHistoryItem
         company="L2, Inc"
         role="Front End Developer"
@@ -93,17 +114,13 @@ export default function WorkHistory() {
         So much data! Used the Google Sheets API + Apps Script and transformed
         the way L2 performed manual data collection.
       </WorkHistoryItem>
+
+      {/* ACCENTURE */}
       <WorkHistoryItem
         company="Accenture"
         role="Front End Developer"
-        date="July 2015 - June 2016">
-        <span className="i">
-          Guiding the world's top companies to do what they do best.
-        </span>{' '}
-        Wrote code viewed by millions for one of Florida's leading electric
-        companies. Daily stand-up's with distributed teams across the nation and
-        globe.
-      </WorkHistoryItem>
+        date="July 2015 - June 2016"
+      />
     </section>
   )
 }

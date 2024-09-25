@@ -21,15 +21,9 @@ export default function InfoCards() {
       <InfoCard title="Top Skills">
         <Skillz />
       </InfoCard>
+
+      {/* CONTACT */}
       <InfoCard title="Contact">
-        <InfoCardItem
-          Icon={Website}
-          content={
-            <a href="https://beats.aaroncordova.dev" target="_blank">
-              beats.aaroncordova.dev
-            </a>
-          }
-        />
         <InfoCardItem
           Icon={Github}
           content={
@@ -55,7 +49,18 @@ export default function InfoCards() {
         />
         <InfoCardItem Icon={Location} content="NJ" />
       </InfoCard>
+
+      {/* OPEN SOURCE */}
       <InfoCard title="Open Source">
+        <InfoCardItem
+          Icon={Website}
+          content={
+            <a href="https://beats.aaroncordova.dev" target="_blank">
+              Beats Playlist
+            </a>
+          }
+          subtext="Spotify, but full of Hip-Hopinstrumentals."
+        />
         <InfoCardItem
           Icon={Typewriter}
           content={
@@ -95,6 +100,8 @@ export default function InfoCards() {
           subtext="Before Tailwind was cool."
         />
       </InfoCard>
+
+      {/* EDUCATION */}
       <InfoCard title="Education">
         <InfoCardItem
           content={
