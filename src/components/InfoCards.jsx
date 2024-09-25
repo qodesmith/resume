@@ -8,6 +8,7 @@ import {
   Calendar,
   Css,
   LinkedIn,
+  Website,
 } from './Icons'
 import InfoCard from './InfoCard'
 import InfoCardItem from './InfoCardItem'
@@ -21,6 +22,14 @@ export default function InfoCards() {
         <Skillz />
       </InfoCard>
       <InfoCard title="Contact">
+        <InfoCardItem
+          Icon={Website}
+          content={
+            <a href="https://beats.aaroncordova.dev" target="_blank">
+              beats.aaroncordova.dev
+            </a>
+          }
+        />
         <InfoCardItem
           Icon={Github}
           content={
