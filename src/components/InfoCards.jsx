@@ -59,7 +59,7 @@ export default function InfoCards() {
               Beats Playlist
             </a>
           }
-          subtext="Spotify, but full of Hip-Hopinstrumentals."
+          subtext="Spotify, but full of Hip-Hop instrumentals."
         />
         <InfoCardItem
           Icon={Typewriter}
