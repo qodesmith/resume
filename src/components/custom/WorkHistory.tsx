@@ -10,39 +10,25 @@ const workHistoryData: WorkHistoryItem[] = [
     startYear: 2023,
     details: [
       {
-        highlight: 'Led frontend architecture as sole frontend engineer',
-        content:
-          'for Docker Model Runner (DMR), transforming a CLI-dependent tool into a production-ready UI that drove 44% increase in model downloads (90k to 130k) within one month.',
+        highlight: 'Led frontend architecture',
+        content: (
+          <>
+            for Docker Model Runner, transforming CLI-dependent tool into
+            production-ready UI that drove{' '}
+            <span className="italic">44% increase</span> in model downloads (90k
+            to 130k).
+          </>
+        ),
       },
       {
-        highlight: 'Consumed real-time streaming',
+        highlight: 'Built cloud-native integration features for Docker Offload',
         content:
-          'for AI model downloads, integrating SSE with RxJS throttling (250ms) to handle high-frequency events without UI thrashing, enabling progress visualization for multi-GB LLM downloads.',
+          ', implementing seamless context switching between local/cloud environments, GPU resource management, and deep-linking architecture for direct navigation from marketing pages.',
       },
       {
-        highlight: 'Built cloud-native integration features',
+        highlight: 'Implemented real-time streaming for AI model downloads',
         content:
-          'for Docker Offload, implementing seamless context switching between local and cloud environments, GPU resource management, and deep-linking architecture for direct navigation from marketing pages.',
-      },
-      {
-        highlight: 'Developed reusable product announcement system',
-        content:
-          "using persistent Redux state management, creating a generic framework adopted by multiple teams across Docker Desktop's Electron/React/Node.js stack.",
-      },
-      {
-        highlight: 'Optimized performance and developer experience',
-        content:
-          'by migrating custom table implementations to Data Grid Pro, reducing codebase complexity by ~40% while standardizing UX patterns across model management and MCP server interfaces.',
-      },
-      {
-        highlight: 'Collaborated cross-functionally',
-        content:
-          'with platform, backend (Go), and AI runtime teams to diagnose and resolve critical framework bugs, including identifying and fixing an edge-case proxy behavior issue in the testing framework that had blocked the platform team.',
-      },
-      {
-        highlight: 'Gained deep AI/ML domain expertise',
-        content:
-          "working with LLM infrastructure including vector databases, embeddings, GGUF model formats, OCI artifacts, and OpenAI-compatible APIs through Docker's Model Context Protocol (MCP) implementation.",
+          'using SSE with RxJS throttling, enabling progress visualization for multi-GB LLM downloads without UI thrashing.',
       },
     ],
   },
@@ -51,6 +37,7 @@ const workHistoryData: WorkHistoryItem[] = [
 export function WorkHistory() {
   return (
     <main>
+      <h2 className="py-2 font-bold text-2xl">EXPERIENCE</h2>
       {workHistoryData.map(
         ({
           company,

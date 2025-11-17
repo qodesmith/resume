@@ -1,3 +1,5 @@
+import type {ReactNode} from 'react'
+
 type Month =
   | 'Jan'
   | 'Feb'
@@ -20,7 +22,7 @@ export type WorkHistoryItem = {
   endMonth?: Month
   endYear?: number
   details: {
-    highlight?: string // Shown in bold
-    content: string // Work history bullet point
+    highlight?: ReactNode // Shown in bold
+    content: ReactNode // Work history bullet point
   }[]
 }

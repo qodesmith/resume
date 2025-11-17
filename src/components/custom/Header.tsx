@@ -1,6 +1,6 @@
 export function Header() {
   return (
-    <header className="relative pt-4 pr-4">
+    <header className="relative pt-4 pr-4 pb-3">
       <div className="-top-4 -left-4 absolute font-bold text-7xl leading-14">
         <div>AARON</div>
         <div>CORDOVA</div>
@@ -14,14 +14,7 @@ export function Header() {
           <span className="font-bold">performance</span>.
         </p>
         <p>
-          At companies like <span className="font-bold">Meta</span>,{' '}
-          <span className="font-bold">Coinbase</span>,{' '}
-          <span className="font-bold">Docker</span>, and{' '}
-          <span className="font-bold">Bloomberg</span>, I've architected
-          impactful
-        </p>
-        <p>
-          interfaces, scaling funnels by 30%, and creating UIs for complex LLM
+          I've architected impactful interfaces and created UIs for complex LLM
           systems.
         </p>
         <p className="italic">Readability &gt; Complexity</p>

@@ -10,7 +10,7 @@ export function ExperienceItem({
   details,
 }: WorkHistoryItem) {
   return (
-    <article className="text-xs">
+    <article className="pb-3 text-xs last:pb-0">
       <div className="flex justify-between text-sm">
         <span className="font-bold uppercase">{company}</span>
         <span>{title}</span>
@@ -23,7 +23,7 @@ export function ExperienceItem({
         {details.map(({highlight, content}, i) => {
           return (
             // biome-ignore lint/suspicious/noArrayIndexKey: it's ok
-            <li key={i}>
+            <li key={i} className="pb-1.5 last:pb-0">
               {highlight ? (
                 <>
                   <span className="font-bold">{highlight}</span> {content}
