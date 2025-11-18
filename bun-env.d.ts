@@ -8,6 +8,22 @@ declare module '*.svg' {
   export = path
 }
 
+declare module '*.png' {
+  /**
+   * A path to the png file
+   */
+  const path: `${string}.png`
+  export = path
+}
+
+declare module '*.webp' {
+  /**
+   * A path to the webp file
+   */
+  const path: `${string}.webp`
+  export = path
+}
+
 declare module '*.module.css' {
   /**
    * A record of class names to their corresponding CSS module classes
