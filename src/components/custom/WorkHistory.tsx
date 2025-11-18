@@ -32,6 +32,57 @@ const workHistoryData: WorkHistoryItem[] = [
       },
     ],
   },
+  {
+    company: 'Coinbase',
+    title: 'Senior Frontend Engineer',
+    startMonth: 'Oct',
+    startYear: 2021,
+    endMonth: 'Dec',
+    endYear: 2023,
+    details: [
+      {
+        highlight: 'Architected fullstack solutions for Coinbase Pay',
+        content:
+          '(Onramp), supporting 100+ cryptocurrencies and 60+ fiat currencies',
+      },
+      {
+        highlight: 'Led Guest Checkout and Apple Pay integration',
+        content:
+          'from inception to launch, architecting solution that enabled non-Coinbase users to onramp up to $500/week, expanding market reach to 500M+ Apple Pay users globally.',
+      },
+      {
+        highlight: 'Drove 30% QoQ volume growth',
+        content:
+          '($164M to $213M) through frontend optimizations that improved funnel conversion rates from 20.1% to 28.3%.',
+      },
+    ],
+  },
+  {
+    company: 'Facebook',
+    title: 'Senior Frontend Engineer',
+    startMonth: 'May',
+    startYear: 2019,
+    endMonth: 'Oct',
+    endYear: 2021,
+    details: [
+      {
+        highlight:
+          'Designed and built ServiceLab Capacity Mode Regressions UI and Workloads UI',
+        content:
+          'end-to-end, replacing manual Python config editing with intuitive interfaces that prevented million-dollar regressions at Facebook scale.',
+      },
+      {
+        highlight: 'Architected custom Recoil-based form library',
+        content:
+          'and Python-to-JSON config parser; modernized codebase by removing 1,224 lines of legacy code while migrating to Relay, GraphQL, and XDS.',
+      },
+      {
+        highlight: 'Led cross-functional user research',
+        content:
+          'across 4 offices, driving API design decisions and mentoring engineers on GraphQL/Relay, reducing implementation time by 50%.',
+      },
+    ],
+  },
 ]
 
 export function WorkHistory() {
