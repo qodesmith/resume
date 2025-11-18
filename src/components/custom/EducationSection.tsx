@@ -17,7 +17,7 @@ export function EducationSection() {
         />
         <EducationItem
           institution="The Cittone Institute"
-          description="Analog and digital circuity"
+          description="Analog and digital circuitry"
         />
         <EducationItem
           institution="The School of Hard Knocks 🎙️"
@@ -40,10 +40,10 @@ function EducationItem({
 }) {
   return (
     <div className="flex flex-col">
-      <h3 className="font-bold">
+      <h3 className="font-bold text-sm">
         {url ? <Link href={url}>{institution}</Link> : institution}
       </h3>
-      <div className="text-sm italic">{description}</div>
+      <div className="text-xs italic">{description}</div>
     </div>
   )
 }

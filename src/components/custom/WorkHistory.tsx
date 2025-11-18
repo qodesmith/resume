@@ -140,7 +140,7 @@ const workHistoryData: WorkHistoryItem[] = [
 export function WorkHistory() {
   return (
     <main>
-      <h2 className="py-2 font-bold text-2xl">EXPERIENCE</h2>
+      <h2 className="pb-2 font-bold text-2xl">EXPERIENCE</h2>
       {workHistoryData.map(
         ({
           company,

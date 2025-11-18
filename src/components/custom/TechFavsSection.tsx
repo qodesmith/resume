@@ -20,7 +20,7 @@ import {MetadataSection} from './MetadataSection'
 export function TechFavsSection() {
   return (
     <MetadataSection title="Tech Favs">
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap text-sm">
         {/* LINE 1 */}
         <Icon icon={<ReactIcon />} text="React" />
         <Bullet />
@@ -35,27 +35,28 @@ export function TechFavsSection() {
         <Bullet />
 
         <Image src={jotaiLogo} text="Jotai" />
-
-        {/* LINE 3 */}
-        <Icon icon={<BiomeIcon />} text="Biome" />
         <Bullet />
 
+        <Icon icon={<BiomeIcon />} text="Biome" />
+
+        {/* LINE 3 */}
         <Image src={shadcnAvatar} text="Shadcn" imgCls="rounded-full" />
         <Bullet />
 
         <Image src={dockerLogo} text="Docker" imgCls="w-6" />
+        <Bullet />
 
         {/* LINE 4 */}
         <Icon icon={<BetterAuthIcon />} text="Better Auth" />
-        <Bullet />
-
-        <Image src={drizzleLogo} text="Drizzle ORM" />
 
         {/* LINE 5 */}
+        <Image src={drizzleLogo} text="Drizzle ORM" />
+        <Bullet />
+
         <Icon icon={<HonoIcon />} text="Hono" />
         <Bullet />
 
-        <Icon icon={<TailwindIcon />} text="Tailwind CSS" />
+        <Icon icon={<TailwindIcon />} text="Tailwind" />
       </div>
     </MetadataSection>
   )
