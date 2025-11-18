@@ -25,4 +25,8 @@ export type WorkHistoryItem = {
     highlight?: ReactNode // Shown in bold
     content: ReactNode // Work history bullet point
   }[]
+  blurb?: {
+    highlight?: ReactNode // Shown in bold
+    content: ReactNode // Work history bullet point
+  }
 }
