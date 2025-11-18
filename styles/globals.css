@@ -129,3 +129,29 @@ ul {
   list-style-type: disc;
   margin-left: 1.11em;
 }
+
+@media print {
+  @page {
+    size: 8.5in 11in;
+    margin: 0;
+  }
+
+  body * {
+    visibility: hidden;
+  }
+
+  #resume,
+  #resume * {
+    visibility: visible;
+  }
+
+  #resume {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 8.5in !important;
+    height: 11in !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
