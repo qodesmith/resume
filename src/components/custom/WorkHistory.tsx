@@ -83,6 +83,58 @@ const workHistoryData: WorkHistoryItem[] = [
       },
     ],
   },
+  {
+    company: 'Bloomberg, LP',
+    title: 'Senior Frontend Engineer',
+    startMonth: 'Jun',
+    startYear: 2018,
+    endMonth: 'May',
+    endYear: 2019,
+    details: [],
+    blurb: {
+      highlight: 'KYC - Entity Intelligence.',
+      content:
+        'Lead frontend development for a research intelligence app using React, Redux, SSR, and Node. Part of an agile team releasing bi-weekly to production.',
+    },
+  },
+  {
+    company: 'Transfix',
+    title: 'Frontend Engineer',
+    startMonth: 'May',
+    startYear: 2017,
+    endMonth: 'Jun',
+    endYear: 2018,
+    details: [],
+    blurb: {
+      highlight: 'Leading the revolution of the shipping industry.',
+      content:
+        'Created a custom React app generator in Node which was used to create all internal applications as well as fast prototyping. Deployed production code daily. Testing with Cypress.',
+    },
+  },
+  {
+    company: 'L2, Inc',
+    title: 'Frontend Developer',
+    startMonth: 'Jun',
+    startYear: 2016,
+    endMonth: 'May',
+    endYear: 2017,
+    details: [],
+    blurb: {
+      highlight:
+        'Measuring the immeasurable - gaining insights on the digital performance of brands.',
+      content:
+        'Used the Google Sheets API + Apps Script and transformed the way L2 performed manual data collection.',
+    },
+  },
+  {
+    company: 'Accenture',
+    title: 'Frontend Developer',
+    startMonth: 'Jul',
+    startYear: 2015,
+    endMonth: 'Jun',
+    endYear: 2016,
+    details: [],
+  },
 ]
 
 export function WorkHistory() {
@@ -98,6 +150,7 @@ export function WorkHistory() {
           endMonth,
           endYear,
           details,
+          blurb,
         }) => {
           return (
             <ExperienceItem
@@ -109,6 +162,7 @@ export function WorkHistory() {
               endMonth={endMonth}
               endYear={endYear}
               details={details}
+              blurb={blurb}
             />
           )
         }
