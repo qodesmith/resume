@@ -14,6 +14,11 @@ type Month =
   | 'Nov'
   | 'Dec'
 
+type Content = {
+  highlight?: ReactNode
+  content: ReactNode
+}
+
 export type WorkHistoryItem = {
   company: string
   title: string
@@ -21,12 +26,6 @@ export type WorkHistoryItem = {
   startYear: number
   endMonth?: Month
   endYear?: number
-  details: {
-    highlight?: ReactNode // Shown in bold
-    content: ReactNode // Work history bullet point
-  }[]
-  blurb?: {
-    highlight?: ReactNode // Shown in bold
-    content: ReactNode // Work history bullet point
-  }
+  details: Content[]
+  blurb?: Content
 }
