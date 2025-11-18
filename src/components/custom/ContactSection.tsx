@@ -3,6 +3,7 @@ import type {ReactNode} from 'react'
 import {Mail, MapPin, Phone} from 'lucide-react'
 
 import {GithubIcon, LinkedInIcon} from './icons'
+import {Link} from './Link'
 import {MetadataSection} from './MetadataSection'
 
 export function ContactSection() {
@@ -43,13 +44,5 @@ function ContactRow({icon, children}: {icon: ReactNode; children: ReactNode}) {
       {icon}
       <div className="grow">{children}</div>
     </div>
-  )
-}
-
-function Link({href, children}: {href: string; children: ReactNode}) {
-  return (
-    <a href={href} className="hover:underline">
-      {children}
-    </a>
   )
 }
