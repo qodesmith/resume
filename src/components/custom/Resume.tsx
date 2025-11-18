@@ -8,7 +8,7 @@ export function Resume() {
     // biome-ignore lint/correctness/useUniqueElementIds: it's ok
     <div
       id="resume"
-      className="mx-auto my-16 flex h-[11in] w-[8.5in] flex-col gap-1 overflow-hidden border font-opensans text-neutral-600"
+      className="mx-auto my-16 flex h-[11in] w-[8.5in] flex-col gap-1 overflow-hidden font-opensans text-neutral-600"
     >
       <Header />
 

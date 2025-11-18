@@ -9,7 +9,7 @@ export function MetadataSection({
 }) {
   return (
     <section>
-      <h2 className="py-2 font-bold text-2xl uppercase">{title}</h2>
+      <h2 className="font-bold text-2xl uppercase">{title}</h2>
       {children}
     </section>
   )
