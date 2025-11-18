@@ -10,7 +10,8 @@ export function Header() {
       </p>
       <div className="pr-1 text-right text-xs">
         <p>
-          I'm Aaron! A fullstack JavaScript engineer obsessed with UX and peak{' '}
+          I'm Aaron! A fullstack JavaScript engineer obsessed with{' '}
+          <span className="font-bold">UX</span> and peak{' '}
           <span className="font-bold">performance</span>.
         </p>
         <p>

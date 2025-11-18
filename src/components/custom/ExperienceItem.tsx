@@ -28,7 +28,8 @@ export function ExperienceItem({
               <li key={i} className="pb-1.5 last:pb-0">
                 {highlight ? (
                   <>
-                    <span className="italic">{highlight}</span> {content}
+                    <span className="font-bold italic">{highlight}</span>{' '}
+                    {content}
                   </>
                 ) : (
                   content
