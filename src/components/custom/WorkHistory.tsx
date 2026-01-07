@@ -46,15 +46,37 @@ const workHistoryData: WorkHistoryItem[] = [
           '(Onramp), supporting 100+ cryptocurrencies and 60+ fiat currencies',
       },
       {
-        highlight: 'Led Guest Checkout and Apple Pay integration',
+        highlight: 'Expanded market reach to 500M+ global Apple Pay users',
         content:
-          'from inception to launch, architecting solution that enabled non-Coinbase users to onramp up to $500/week, expanding market reach to 500M+ Apple Pay users globally.',
+          'by leading the end-to-end architecture and launch of Guest Checkout, enabling non-Coinbase users to onramp up to $500/week.',
       },
+      // {
+      //   highlight: 'Led Guest Checkout and Apple Pay integration',
+      //   content:
+      //     'from inception to launch, architecting solutions that enabled non-Coinbase users to onramp up to $500/week, expanding market reach to 500M+ Apple Pay users globally.',
+      // },
       {
-        highlight: 'Drove 30% QoQ volume growth',
+        highlight: 'Scaled payment volume to $100M+',
         content:
-          '($164M to $213M) through frontend optimizations that improved funnel conversion rates from 20.1% to 28.3%.',
+          'by achieving 30% QoQ growth, while establishing the integration ecosystem from the ground up with 80+ partners.',
       },
+      // {
+      //   highlight: 'Drove 30% QoQ volume growth',
+      //   content:
+      //     '($164M to $213M) through frontend optimizations that improved funnel conversion rates from 20.1% to 28.3%.',
+      // },
+      // {
+      //   highlight: 'Drove payment volume to north of $100 million',
+      //   content: ''
+      // },
+      // {
+      //   highlight: 'Went from 0 to north of 80 integration partners',
+      //   content: '(developers who have integrated CB Pay)'
+      // },
+      // {
+      //   highlight: '0 - 200k monthly transacting users',
+      //   content: ''
+      // }
     ],
   },
   {
