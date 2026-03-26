@@ -20,14 +20,13 @@ export function Resume() {
         </button>
       </div>
 
-      {/* biome-ignore lint/correctness/useUniqueElementIds: it's ok */}
       <div
         id="resume"
         className="mx-auto flex h-[11in] w-[8.5in] flex-col gap-1 overflow-hidden font-opensans text-neutral-600"
       >
         <Header />
 
-        <section className="grid h-full grid-cols-[63%_auto_1fr] gap-2 p-4">
+        <section className="grid h-full grid-cols-[63%_auto_1fr] gap-2 px-4 pb-4">
           <WorkHistory />
           <Separator orientation="vertical" />
           <Metadata />
