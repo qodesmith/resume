@@ -10,6 +10,16 @@ const workHistoryData: WorkHistoryItem[] = [
     startYear: 2023,
     details: [
       {
+        highlight: "Revitalized Docker's design system",
+        content:
+          'with an agent-first architecture built on Shadcn, Tailwind UI, and a custom component registry.',
+      },
+      {
+        highlight: 'Created an end-to-end prototyping toolkit',
+        content:
+          '- a CLI scaffolder for consistent frontend stacks, custom AI skills for design system guardrails, and an internal deploy service letting designers ship live prototype URLs to engineers',
+      },
+      {
         highlight: 'Led frontend architecture',
         content: (
           <>
@@ -25,11 +35,11 @@ const workHistoryData: WorkHistoryItem[] = [
         content:
           ', implementing seamless context switching between local/cloud environments, GPU resource management, and deep-linking architecture for direct navigation from marketing pages.',
       },
-      {
-        highlight: 'Implemented real-time streaming for AI model downloads',
-        content:
-          'using SSE with RxJS throttling, enabling progress visualization for multi-GB LLM downloads without UI thrashing.',
-      },
+      // {
+      //   highlight: 'Implemented real-time streaming for AI model downloads',
+      //   content:
+      //     'using SSE with RxJS throttling, enabling progress visualization for multi-GB LLM downloads without UI thrashing.',
+      // },
     ],
   },
   {
