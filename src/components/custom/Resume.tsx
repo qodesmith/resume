@@ -20,7 +20,6 @@ export function Resume() {
         </button>
       </div>
 
-      {/* biome-ignore lint/correctness/useUniqueElementIds: it's ok */}
       <div
         id="resume"
         className="mx-auto flex h-[11in] w-[8.5in] flex-col gap-1 overflow-hidden font-opensans text-neutral-600"
