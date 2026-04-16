@@ -9,10 +9,8 @@ export function MetadataSection({
 }) {
   return (
     <section>
-      <h2 className="pt-1 pb-2 font-bold text-2xl uppercase first:pt-0">
-        {title}
-      </h2>
-      {children}
+      <h2 className="py-1 font-bold text-2xl uppercase first:pt-0">{title}</h2>
+      <div className="flex flex-col gap-1.5">{children}</div>
     </section>
   )
 }
