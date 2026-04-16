@@ -17,9 +17,9 @@ import {
 } from './icons'
 import {MetadataSection} from './MetadataSection'
 
-export function TechFavsSection() {
+export function SkillsSection() {
   return (
-    <MetadataSection title="Tech Favs">
+    <MetadataSection title="Skills">
       <div className="flex flex-wrap text-sm">
         {/* LINE 1 */}
         <Icon icon={<ReactIcon />} text="React" />
