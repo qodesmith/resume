@@ -19,11 +19,11 @@ export function EducationSection() {
           institution="The Cittone Institute"
           description="Analog and digital circuitry"
         />
-        <EducationItem
+        {/* <EducationItem
           institution="The School of Hard Knocks 🎙️"
           description="Life wisdom from the pavement"
           url="https://www.youtube.com/watch?v=NI5rplnShGY&list=PLj2TkO0tSJ_n15HKKCJLELm0L7sOymz0a"
-        />
+        /> */}
       </div>
     </MetadataSection>
   )
