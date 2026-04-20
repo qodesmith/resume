@@ -10,16 +10,6 @@ const workHistoryData: WorkHistoryItem[] = [
     startYear: 2023,
     details: [
       {
-        highlight: "Revitalized Docker's design system",
-        content:
-          'with an agent-first architecture built on Shadcn, Tailwind UI, and a custom component registry.',
-      },
-      {
-        highlight: 'Created an end-to-end prototyping toolkit',
-        content:
-          '- a CLI scaffolder for consistent frontend stacks, custom AI skills for design system guardrails, and an internal deploy service letting designers ship live prototype URLs to engineers',
-      },
-      {
         highlight: 'Led frontend architecture',
         content: (
           <>
@@ -31,15 +21,26 @@ const workHistoryData: WorkHistoryItem[] = [
         ),
       },
       {
-        highlight: 'Built cloud-native integration features for Docker Offload',
+        highlight:
+          'Built cloud-native integration features for Docker Offload,',
         content:
-          ', implementing seamless context switching between local/cloud environments, GPU resource management, and deep-linking architecture for direct navigation from marketing pages.',
+          ' implementing seamless context switching between local/cloud environments, GPU resource management, and deep-linking architecture for direct navigation from marketing pages.',
       },
       // {
       //   highlight: 'Implemented real-time streaming for AI model downloads',
       //   content:
       //     'using SSE with RxJS throttling, enabling progress visualization for multi-GB LLM downloads without UI thrashing.',
       // },
+      {
+        highlight: "Revitalized Docker's design system",
+        content:
+          'with an agent-first architecture built on Shadcn, Tailwind UI, and a custom component registry. 129 components, DTCG compliant tokens, and 3 theme modes with WCAG AA/AAA contrast validation.',
+      },
+      {
+        highlight: 'Created an end-to-end prototyping toolkit',
+        content:
+          '- a CLI scaffolder for consistent frontend stacks, custom AI skills for design system guardrails, and an internal deploy service letting designers ship live prototype URLs to engineers.',
+      },
     ],
   },
   {
@@ -138,9 +139,8 @@ const workHistoryData: WorkHistoryItem[] = [
     endYear: 2018,
     details: [],
     blurb: {
-      highlight: 'Leading the revolution of the shipping industry.',
       content:
-        'Created a custom React app generator in Node which was used to create all internal applications as well as fast prototyping. Deployed production code daily. Testing with Cypress.',
+        'Created a custom React app generator in Node used to create all internal applications.',
     },
   },
   {
@@ -152,10 +152,8 @@ const workHistoryData: WorkHistoryItem[] = [
     endYear: 2017,
     details: [],
     blurb: {
-      highlight:
-        'Measuring the immeasurable - gaining insights on the digital performance of brands.',
       content:
-        'Used the Google Sheets API + Apps Script and transformed the way L2 performed manual data collection.',
+        'Used the Google Sheets API + Apps Script to relieve manual data collection.',
     },
   },
   {
@@ -166,6 +164,10 @@ const workHistoryData: WorkHistoryItem[] = [
     endMonth: 'Jun',
     endYear: 2016,
     details: [],
+    blurb: {
+      content:
+        'Delivered a living style guide to clients; created cross-browser custom email templates.',
+    },
   },
 ]
 
