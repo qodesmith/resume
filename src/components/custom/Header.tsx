@@ -6,7 +6,7 @@ export function Header() {
         <div>CORDOVA</div>
       </div>
       <div className="ml-auto w-96 text-right">
-        <p className="tracking-[4px]">FULLSTACK SOFTWARE ENGINEER</p>
+        <p className="tracking-[4px]">SENIOR FRONTEND ENGINEER</p>
         <p className="text-xs">
           10+ years turning complex backends into intuitive frontends. Fullstack
           JavaScript engineer who's built AI tooling at Docker, payment
