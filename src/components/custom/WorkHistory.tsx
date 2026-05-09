@@ -21,25 +21,20 @@ const workHistoryData: WorkHistoryItem[] = [
         ),
       },
       {
+        highlight: 'Implemented real-time streaming for AI model downloads',
+        content:
+          'using SSE with RxJS throttling, enabling progress visualization for multi-GB LLM downloads without UI thrashing.',
+      },
+      {
         highlight:
           'Built cloud-native integration features for Docker Offload,',
         content:
           ' implementing seamless context switching between local/cloud environments, GPU resource management, and deep-linking architecture for direct navigation from marketing pages.',
       },
-      // {
-      //   highlight: 'Implemented real-time streaming for AI model downloads',
-      //   content:
-      //     'using SSE with RxJS throttling, enabling progress visualization for multi-GB LLM downloads without UI thrashing.',
-      // },
       {
         highlight: "Revitalized Docker's design system",
         content:
           'with an agent-first architecture built on Shadcn, Tailwind UI, and a custom component registry. 129 components, DTCG compliant tokens, and 3 theme modes with WCAG AA/AAA contrast validation.',
-      },
-      {
-        highlight: 'Created an end-to-end prototyping toolkit',
-        content:
-          '- a CLI scaffolder for consistent frontend stacks, custom AI skills for design system guardrails, and an internal deploy service letting designers ship live prototype URLs to engineers.',
       },
     ],
   },
