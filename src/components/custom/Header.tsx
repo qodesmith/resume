@@ -8,9 +8,9 @@ export function Header() {
       <div className="ml-auto w-96 text-right">
         <p className="tracking-[4px]">SENIOR FRONTEND ENGINEER</p>
         <p className="text-xs">
-          10+ years turning complex backends into intuitive frontends. Fullstack
-          JavaScript engineer who's built AI tooling at Docker, payment
-          platforms at Coinbase, and infrastructure UIs at Meta.
+          10+ years turning complex backends into intuitive frontends.
+          TypeScript expert who's built AI tooling at Docker, payment platforms
+          at Coinbase, and infrastructure UIs at Meta.
         </p>
         <p className="text-xs italic">Readability &gt; Complexity</p>
       </div>
