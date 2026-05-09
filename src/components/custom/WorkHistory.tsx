@@ -10,6 +10,11 @@ const workHistoryData: WorkHistoryItem[] = [
     startYear: 2023,
     details: [
       {
+        highlight: "Revitalized Docker's design system",
+        content:
+          'with an agent-first architecture built on Shadcn, Tailwind UI, and a custom component registry. 129 components, DTCG compliant tokens, and 3 theme modes with WCAG AA/AAA contrast validation.',
+      },
+      {
         highlight: 'Led frontend architecture',
         content: (
           <>
@@ -30,11 +35,6 @@ const workHistoryData: WorkHistoryItem[] = [
           'Built cloud-native integration features for Docker Offload,',
         content:
           ' implementing seamless context switching between local/cloud environments, GPU resource management, and deep-linking architecture for direct navigation from marketing pages.',
-      },
-      {
-        highlight: "Revitalized Docker's design system",
-        content:
-          'with an agent-first architecture built on Shadcn, Tailwind UI, and a custom component registry. 129 components, DTCG compliant tokens, and 3 theme modes with WCAG AA/AAA contrast validation.',
       },
     ],
   },
