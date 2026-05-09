@@ -5,19 +5,17 @@ import {MetadataSection} from './MetadataSection'
 export function SkillsSection() {
   return (
     <MetadataSection title="Skills">
-      <SkillItem title="Languages">
-        JavaScript, TypeScript, Python, HTML, CSS
+      <SkillItem title="Frontend">
+        React, TypeScript, Redux, Relay, Tailwind, Shadcn, HTML, CSS
       </SkillItem>
-      <SkillItem title="Frameworks">
-        React, Node.js, GraphQL, Relay, Redux, Hono, Tailwind
+      <SkillItem title="Backend">
+        TypeScript, Node.js, Bun, Hono, GraphQL, REST APIs
       </SkillItem>
-      <SkillItem title="Tools">
-        Claude Code CLI, Docker, Git, Bun, Shadcn
-      </SkillItem>
-      <SkillItem title="Data">SQLite, MongoDB, REST APIs</SkillItem>
+      <SkillItem title="Data">SQLite, MongoDB</SkillItem>
       <SkillItem title="Testing">
-        Jest, Cypress, Bun, React Testing Library
+        Jest, Cypress, React Testing Library
       </SkillItem>
+      <SkillItem title="Tooling">Docker, Git, Claude Code CLI</SkillItem>
     </MetadataSection>
   )
 }
