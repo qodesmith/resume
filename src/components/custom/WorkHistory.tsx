@@ -37,7 +37,8 @@ const workHistoryData: WorkHistoryItem[] = [
           ' implementing seamless context switching between local/cloud environments and GPU resource management.',
       },
       {
-        highlight: 'Architected a reusable deep-link system across the Electron stack',
+        highlight:
+          'Architected a reusable deep-link system across the Electron stack',
         content:
           ' (React renderer + Node.js main process), designed for any team to adopt and first launched by Docker Offload to surface product announcement dialogs from web marketing pages.',
       },
@@ -125,9 +126,9 @@ const workHistoryData: WorkHistoryItem[] = [
     endYear: 2019,
     details: [],
     blurb: {
-      highlight: 'KYC - Entity Intelligence.',
+      highlight: 'KYC - Anti Money Laundering.',
       content:
-        'Lead frontend development for a research intelligence app using React, Redux, SSR, and Node. Part of an agile team releasing bi-weekly to production.',
+        'One of 3 frontend engineers building a research intelligence app that vetted entities through sanctions, beneficial ownership, and negative news sentiment — using React, Redux, SSR, and Node.',
     },
   },
   {
