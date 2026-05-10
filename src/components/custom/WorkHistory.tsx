@@ -34,7 +34,12 @@ const workHistoryData: WorkHistoryItem[] = [
         highlight:
           'Built cloud-native integration features for Docker Offload,',
         content:
-          ' implementing seamless context switching between local/cloud environments, GPU resource management, and deep-linking architecture for direct navigation from marketing pages.',
+          ' implementing seamless context switching between local/cloud environments and GPU resource management.',
+      },
+      {
+        highlight: 'Architected a reusable deep-link system across the Electron stack',
+        content:
+          ' (React renderer + Node.js main process), designed for any team to adopt and first launched by Docker Offload to surface product announcement dialogs from web marketing pages.',
       },
     ],
   },
