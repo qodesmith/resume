@@ -11,8 +11,8 @@ export function ExperienceItem({
   blurb,
 }: WorkHistoryItem) {
   return (
-    <article className="pb-3 text-xs last:pb-0">
-      <div className="flex justify-between text-sm">
+    <article className="pb-2.5 text-xs last:pb-0">
+      <div className="flex justify-between border-b border-dotted text-sm">
         <span className="font-bold uppercase">{company}</span>
         <span>{title}</span>
       </div>

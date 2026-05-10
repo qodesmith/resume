@@ -6,7 +6,7 @@ export function OpenSourceSection() {
     <MetadataSection title="Open Source">
       <OpenSourceItem
         title="Create New App"
-        description="Custom fullstack React app generator"
+        description="Bun-powered CLI for generating fullstack React apps"
         url="https://github.com/qodesmith/create-new-app"
         linkText="github.com/qodesmith/create-new-app"
       />
