@@ -141,7 +141,7 @@ const workHistoryData: WorkHistoryItem[] = [
     details: [],
     blurb: {
       content:
-        'Created a custom React app generator in Node used to create all internal applications.',
+        'Built a React app generator in Node used across all internal apps, set frontend standards, and mentored junior engineers — React, Redux, Cypress.',
     },
   },
   {
@@ -154,7 +154,7 @@ const workHistoryData: WorkHistoryItem[] = [
     details: [],
     blurb: {
       content:
-        'Used the Google Sheets API + Apps Script to relieve manual data collection.',
+        'Replaced manual Excel-based data collection with a company-wide solution built on the Google Sheets API and Apps Script.',
     },
   },
   {
