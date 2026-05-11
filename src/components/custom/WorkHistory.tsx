@@ -1,6 +1,22 @@
 import type {WorkHistoryItem} from '../../types'
 
+import {Tooltip, TooltipContent, TooltipTrigger} from '../ui/tooltip'
 import {ExperienceItem} from './ExperienceItem'
+
+function WorkItemTootip({text, tooltip}: {text: string; tooltip: string}) {
+  return (
+    <Tooltip>
+      <TooltipTrigger asChild>
+        <span className="resume-tooltip border-b border-b-current border-dotted">
+          {text}
+        </span>
+      </TooltipTrigger>
+      <TooltipContent>
+        <span>{tooltip}</span>
+      </TooltipContent>
+    </Tooltip>
+  )
+}
 
 const workHistoryData: WorkHistoryItem[] = [
   {
@@ -11,8 +27,23 @@ const workHistoryData: WorkHistoryItem[] = [
     details: [
       {
         highlight: "Architected Docker's design system",
-        content:
-          "on an accessibility-first, agent-first foundation - Tailwind + custom Shadcn registry, 129 components, DTCG tokens, 3 theme modes, WCAG AA/AAA contrast. Consumed today by Claude Code, Claude Desktop, Codex CLI, Opencode, and Docker's internal coding agents.",
+        content: (
+          <>
+            on an accessibility-first, agent-first foundation - Tailwind +
+            custom Shadcn registry, 129 components,{' '}
+            <WorkItemTootip
+              text="DTCG"
+              tooltip="Design Tokens Community Group"
+            />{' '}
+            tokens, 3 theme modes,{' '}
+            <WorkItemTootip
+              text="WCAG"
+              tooltip="Web Content Accessibility Guidelines"
+            />{' '}
+            AA/AAA contrast. Consumed today by Claude Code, Claude Desktop,
+            Codex CLI, Opencode, and Docker's internal coding agents.
+          </>
+        ),
       },
       {
         highlight: 'Sole frontend engineer on Docker Model Runner,',
@@ -160,11 +191,12 @@ const workHistoryData: WorkHistoryItem[] = [
     endMonth: 'Jun',
     endYear: 2016,
     details: [],
-    blurb: {
-      content:
-        // 'Delivered a living style guide to clients; created cross-browser custom email templates.',
-        'Built and maintained responsive applications serving millions of customers daily, working across local and global teams.',
-    },
+    // blurb: {
+    //   content:
+    //     // 'Delivered a living style guide to clients; created cross-browser custom email templates.',
+    //     'Built and maintained responsive applications serving millions of customers daily, working across local and global teams.',
+    // },
+    hideTitleUnderline: true,
   },
 ]
 
@@ -172,32 +204,15 @@ export function WorkHistory() {
   return (
     <main>
       <h2 className="pb-2 font-bold text-2xl">EXPERIENCE</h2>
-      {workHistoryData.map(
-        ({
-          company,
-          title,
-          startMonth,
-          startYear,
-          endMonth,
-          endYear,
-          details,
-          blurb,
-        }) => {
-          return (
-            <ExperienceItem
-              key={company}
-              company={company}
-              title={title}
-              startMonth={startMonth}
-              startYear={startYear}
-              endMonth={endMonth}
-              endYear={endYear}
-              details={details}
-              blurb={blurb}
-            />
-          )
-        }
-      )}
+      {workHistoryData.map(({company, ...workHistoryItem}) => {
+        return (
+          <ExperienceItem
+            key={company}
+            {...workHistoryItem}
+            company={company}
+          />
+        )
+      })}
     </main>
   )
 }

@@ -122,12 +122,16 @@
 }
 
 #resume {
-  background: radial-gradient(circle at bottom right, rgba(0,0,255,.1), transparent);
+  background: radial-gradient(
+    circle at bottom right,
+    rgba(0, 0, 255, 0.1),
+    transparent
+  );
 }
 
 ul {
-  list-style-type: disc;
   margin-left: 1.11em;
+  list-style-type: disc;
 }
 
 @media print {
@@ -147,11 +151,15 @@ ul {
 
   #resume {
     position: absolute;
-    left: 0;
     top: 0;
+    left: 0;
     width: 8.5in !important;
     height: 11in !important;
-    margin: 0 !important;
     padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .resume-tooltip {
+    border: none !important;
   }
 }

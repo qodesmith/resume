@@ -1,5 +1,7 @@
 import type {WorkHistoryItem} from '../../types'
 
+import {cn} from '@/lib/utils'
+
 export function ExperienceItem({
   company,
   title,
@@ -9,10 +11,16 @@ export function ExperienceItem({
   endYear,
   details,
   blurb,
+  hideTitleUnderline,
 }: WorkHistoryItem) {
   return (
     <article className="pb-3 text-xs last:pb-0">
-      <div className="flex justify-between border-b border-dotted text-sm">
+      <div
+        className={cn(
+          'flex justify-between text-sm',
+          !hideTitleUnderline && 'border-b border-dotted'
+        )}
+      >
         <div className="flex items-baseline gap-2">
           <span className="font-bold uppercase">{company}</span>
           <div className="text-xs italic">
