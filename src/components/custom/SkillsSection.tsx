@@ -6,16 +6,18 @@ export function SkillsSection() {
   return (
     <MetadataSection title="Skills">
       <SkillItem title="Frontend">
-        React, TypeScript, Redux, Relay, Tailwind, Shadcn, HTML, CSS
+        TypeScript, React, Tailwind, Jotai, Redux, Relay, Shadcn, HTML, CSS
       </SkillItem>
       <SkillItem title="Backend">
-        TypeScript, Node.js, Bun, Hono, GraphQL, REST APIs
+        Node.js, Bun, Hono, GraphQL, REST APIs
       </SkillItem>
-      <SkillItem title="Data">SQLite, MongoDB</SkillItem>
+      <SkillItem title="Data">SQLite, MongoDB, Postgres</SkillItem>
       <SkillItem title="Testing">
         Jest, Cypress, React Testing Library
       </SkillItem>
-      <SkillItem title="Tooling">Docker, Git, Claude Code CLI</SkillItem>
+      <SkillItem title="Tooling">
+        Docker, Git, Biome, Claude Code CLI / API
+      </SkillItem>
     </MetadataSection>
   )
 }
