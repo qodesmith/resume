@@ -27,17 +27,17 @@ const workHistoryData: WorkHistoryItem[] = [
         ),
       },
       {
-        highlight: 'Built the MCP Catalog UI in Docker Desktop,',
+        highlight: 'Shipped the MCP Catalog UI in Docker Desktop,',
         content:
           'an in-app directory to discover and install MCP servers. Parsed Go-generated markdown and contributed upstream Go fixes.',
       },
       {
-        highlight: 'Built cloud-native features for Docker Offload,',
+        highlight: 'Delivered cloud-native features for Docker Offload,',
         content:
           'including seamless local/cloud context switching and GPU resource management.',
       },
       {
-        highlight: 'Architected a reusable deep-link system across Electron',
+        highlight: 'Designed a reusable deep-link system across Electron',
         content:
           '(React renderer + Node main process), adoptable by any team; first shipped by Docker Offload to surface announcement dialogs from web marketing pages.',
       },
@@ -52,7 +52,7 @@ const workHistoryData: WorkHistoryItem[] = [
     endYear: 2023,
     details: [
       {
-        highlight: 'Architected fullstack solutions for Coinbase Pay (Onramp),',
+        highlight: 'Owned fullstack delivery of Coinbase Pay (Onramp),',
         content:
           'a Next.js app supporting 100+ cryptocurrencies and 60+ fiat currencies.',
       },
@@ -67,7 +67,7 @@ const workHistoryData: WorkHistoryItem[] = [
           'at 30% QoQ growth, building the integration ecosystem from 0 to 80+ partners.',
       },
       {
-        highlight: 'Improved funnel conversion 20.1% → 28.3%,',
+        highlight: 'Drove funnel conversion 20.1% → 28.3%,',
         content:
           'driving volume from $164M to $213M and scaling monthly transacting users from 0 to 200k.',
       },
@@ -101,7 +101,7 @@ const workHistoryData: WorkHistoryItem[] = [
           'end-to-end, replacing manual Python config edits with UIs that prevented million-dollar regressions at Meta scale.',
       },
       {
-        highlight: 'Architected a custom Recoil-based form library',
+        highlight: 'Engineered a custom Recoil-based form library',
         content:
           'and Python-to-JSON config parser. Removed 1,224 lines of legacy code while migrating to Relay, GraphQL, and XDS.',
       },
