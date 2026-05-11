@@ -23,7 +23,7 @@ export function ExperienceItem({
         <span>{title}</span>
       </div>
 
-      <div className="pt-1">
+      <div className="pt-0.5">
         {details.length > 0 && (
           <ul>
             {details.map(({highlight, content}, i) => {

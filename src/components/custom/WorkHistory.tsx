@@ -13,18 +13,18 @@ const workHistoryData: WorkHistoryItem[] = [
         highlight: 'Sole frontend engineer on Docker Model Runner,',
         content: (
           <>
-            Docker's local LLM platform. Rebuilt the chat UI and SSE + RxJS
-            streaming for model downloads - progress, failures, and concurrency
-            without UI thrashing. Drove{' '}
+            Docker's local LLM inference platform. Rebuilt the chat UI and SSE +
+            RxJS streaming for model downloads - progress, failures, and
+            concurrency without UI thrashing. Drove{' '}
             <span className="italic">44% increase</span> in downloads (90k →
             130k).
           </>
         ),
       },
       {
-        highlight: "Revitalized Docker's design system",
+        highlight: "Architected Docker's design system",
         content:
-          'with an accessibility-first, agent-first architecture on Tailwind + a custom Shadcn registry: 129 components, DTCG tokens, and 3 theme modes with WCAG AA/AAA contrast.',
+          "on an accessibility-first, agent-first foundation - Tailwind + custom Shadcn registry, 129 components, DTCG tokens, 3 theme modes, WCAG AA/AAA contrast. Consumed today by Claude Code, Claude Desktop, Codex CLI, Opencode, and Docker's internal coding agents.",
       },
       {
         highlight: 'Built the MCP Catalog UI in Docker Desktop,',
