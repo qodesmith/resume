@@ -11,19 +11,19 @@ export function ContactSection() {
     <MetadataSection title="Contact" tight first>
       <ContactRow
         icon={
-          <div className="h-4 w-4">
+          <div className="h-3 w-3">
             <GithubIcon />
           </div>
         }
       >
         <Link href="https://github.com/qodesmith">github.com/qodesmith</Link>
       </ContactRow>
-      <ContactRow icon={<Mail size={16} />}>
+      <ContactRow icon={<Mail size={12} />}>
         <Link href="mailto:theqodesmith@gmail.com">theqodesmith@gmail.com</Link>
       </ContactRow>
       <ContactRow
         icon={
-          <div className="h-4 w-4">
+          <div className="h-3 w-3">
             <LinkedInIcon />
           </div>
         }
@@ -33,15 +33,15 @@ export function ContactSection() {
         </Link>
       </ContactRow>
 
-      <ContactRow icon={<Phone size={16} />}>917-524-7817</ContactRow>
-      <ContactRow icon={<MapPin size={16} />}>NJ</ContactRow>
+      <ContactRow icon={<Phone size={12} />}>917-524-7817</ContactRow>
+      <ContactRow icon={<MapPin size={12} />}>NJ</ContactRow>
     </MetadataSection>
   )
 }
 
 function ContactRow({icon, children}: {icon: ReactNode; children: ReactNode}) {
   return (
-    <div className="flex items-center gap-4 text-sm">
+    <div className="flex items-center gap-4 text-xs">
       {icon}
       <div className="grow">{children}</div>
     </div>
