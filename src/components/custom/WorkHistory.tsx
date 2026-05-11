@@ -50,7 +50,8 @@ const workHistoryData: WorkHistoryItem[] = [
         content: (
           <>
             Docker's local LLM inference platform. Redesigned and rebuilt the
-            chat UI, including support for multimodal LLM responses., SSE + RxJS
+            chat UI, including support for multimodal LLM responses.{' '}
+            <WorkItemTootip text="SSE" tooltip="Server Sent Events" /> + RxJS
             streaming for model downloads - progress, failures, and concurrency
             without UI thrashing. Drove{' '}
             <span className="italic">44% increase</span> in downloads (90k →
@@ -71,7 +72,7 @@ const workHistoryData: WorkHistoryItem[] = [
       {
         highlight: 'Designed a reusable deep-link system across Electron',
         content:
-          '(React renderer + Node main process), adoptable by any team; first shipped by Docker Offload to surface announcement dialogs from web marketing pages.',
+          '(React renderer + Node main process), adoptable by any team. First shipped by Docker Offload to surface announcement dialogs from web marketing pages.',
       },
     ],
   },
@@ -134,8 +135,17 @@ const workHistoryData: WorkHistoryItem[] = [
       },
       {
         highlight: 'Engineered a custom Recoil-based form library',
-        content:
-          'and Python-to-JSON config parser. Removed 1,224 lines of legacy code while migrating to Relay, GraphQL, and XDS.',
+        content: (
+          <>
+            and Python-to-JSON config parser. Removed 1,224 lines of legacy code
+            while migrating to Relay, GraphQL, and{' '}
+            <WorkItemTootip
+              text="XDS"
+              tooltip="Internal design system at Meta"
+            />
+            .
+          </>
+        ),
       },
       {
         highlight: 'Led cross-functional user research across 4 offices,',
@@ -154,8 +164,15 @@ const workHistoryData: WorkHistoryItem[] = [
     details: [],
     blurb: {
       highlight: 'KYC - Anti Money Laundering.',
-      content:
-        'One of 3 frontend engineers building a research intelligence app that vetted entities through sanctions, beneficial ownership, and negative news sentiment - using React, Redux, SSR, and Node.',
+      content: (
+        <>
+          One of 3 frontend engineers building a research intelligence app that
+          vetted entities through sanctions, beneficial ownership, and negative
+          news sentiment - using React, Redux,{' '}
+          <WorkItemTootip text="SSR" tooltip="Server Side Rendering" />, and
+          Node.
+        </>
+      ),
     },
   },
   {
@@ -181,7 +198,7 @@ const workHistoryData: WorkHistoryItem[] = [
     details: [],
     blurb: {
       content:
-        'Built internal research tools in React + Redux on a Node/Express backend; replaced company-wide Excel workflows with a Google Sheets API + Apps Script automation.',
+        'Built internal research tools in React + Redux on a Node/Express backend. Replaced company-wide Excel workflows with a Google Sheets API + Apps Script automation.',
     },
   },
   {
