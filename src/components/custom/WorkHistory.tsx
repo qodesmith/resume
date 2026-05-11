@@ -12,7 +12,7 @@ const workHistoryData: WorkHistoryItem[] = [
       {
         highlight: "Revitalized Docker's design system",
         content:
-          'with an agent-first architecture built on Shadcn, Tailwind UI, and a custom component registry. 129 components, DTCG compliant tokens, and 3 theme modes with WCAG AA/AAA contrast validation.',
+          'with an agent-first architecture built on Tailwind and a custom Shadcn component registry. 129 components, DTCG compliant tokens, and 3 theme modes with WCAG AA/AAA contrast validation.',
       },
       {
         highlight: 'Led frontend architecture',
