@@ -9,7 +9,7 @@ export function Resume() {
   }
 
   return (
-    <div className="mx-auto">
+    <div className="mx-auto mb-12">
       <div className="flex justify-center p-6">
         <button
           type="button"
@@ -26,7 +26,7 @@ export function Resume() {
       >
         <Header />
 
-        <section className="grid h-full grid-cols-[63%_auto_1fr] gap-2 px-4 pt-10 pb-4">
+        <section className="grid h-full grid-cols-[63%_auto_1fr] gap-2 px-4 pt-6 pb-4">
           <WorkHistory />
           <Separator orientation="vertical" />
           <Metadata />
