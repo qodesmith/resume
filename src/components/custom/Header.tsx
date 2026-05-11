@@ -18,8 +18,8 @@ export function Header() {
   const years = Math.floor(months / 12)
 
   return (
-    <header className="relative pr-4">
-      <div className="absolute -top-5 -left-4 scale-y-90 font-bold text-7xl leading-14">
+    <header className="relative pt-4 pr-4">
+      <div className="absolute -top-4 -left-4 font-bold text-7xl leading-14">
         <div>AARON</div>
         <div>CORDOVA</div>
       </div>
