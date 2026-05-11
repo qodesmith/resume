@@ -7,7 +7,7 @@ export function SkillsSection() {
     <MetadataSection title="Skills">
       <SkillItem title="AI">
         MCP (Model Context Protocol), agentic UIs, Anthropic API, Claude SDK,
-        LLM streaming (SSE + RxJS), Claude Code CLI
+        LLM streaming (SSE, RxJS), Claude Code CLI
       </SkillItem>
       <SkillItem title="Frontend">
         TypeScript, React, Tailwind, Jotai, Redux, Relay, Shadcn, HTML, CSS
