@@ -5,6 +5,10 @@ import {MetadataSection} from './MetadataSection'
 export function SkillsSection() {
   return (
     <MetadataSection title="Skills">
+      <SkillItem title="AI">
+        MCP (Model Context Protocol), agentic UIs, Anthropic API, Claude SDK,
+        LLM streaming (SSE + RxJS), Claude Code CLI
+      </SkillItem>
       <SkillItem title="Frontend">
         TypeScript, React, Tailwind, Jotai, Redux, Relay, Shadcn, HTML, CSS
       </SkillItem>
@@ -15,9 +19,7 @@ export function SkillsSection() {
       <SkillItem title="Testing">
         Jest, Cypress, React Testing Library
       </SkillItem>
-      <SkillItem title="Tooling">
-        Docker, Git, Biome, Claude Code CLI / API
-      </SkillItem>
+      <SkillItem title="Tooling">Docker, Git, Biome</SkillItem>
     </MetadataSection>
   )
 }

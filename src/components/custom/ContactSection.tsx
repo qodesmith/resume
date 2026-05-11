@@ -11,19 +11,19 @@ export function ContactSection() {
     <MetadataSection title="Contact">
       <ContactRow
         icon={
-          <div className="h-5 w-5">
+          <div className="h-4 w-4">
             <GithubIcon />
           </div>
         }
       >
         <Link href="https://github.com/qodesmith">github.com/qodesmith</Link>
       </ContactRow>
-      <ContactRow icon={<Mail size={20} />}>
+      <ContactRow icon={<Mail size={16} />}>
         <Link href="mailto:theqodesmith@gmail.com">theqodesmith@gmail.com</Link>
       </ContactRow>
       <ContactRow
         icon={
-          <div className="h-5 w-5">
+          <div className="h-4 w-4">
             <LinkedInIcon />
           </div>
         }
@@ -33,8 +33,8 @@ export function ContactSection() {
         </Link>
       </ContactRow>
 
-      <ContactRow icon={<Phone size={20} />}>917-524-7817</ContactRow>
-      <ContactRow icon={<MapPin size={20} />}>NJ</ContactRow>
+      <ContactRow icon={<Phone size={16} />}>917-524-7817</ContactRow>
+      <ContactRow icon={<MapPin size={16} />}>NJ</ContactRow>
     </MetadataSection>
   )
 }

@@ -5,7 +5,7 @@ import {SkillsSection} from './SkillsSection'
 
 export function Metadata() {
   return (
-    <aside className="flex flex-col gap-5">
+    <aside className="flex flex-col gap-2">
       <ContactSection />
       <SkillsSection />
       <OpenSourceSection />
