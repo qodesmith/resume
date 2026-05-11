@@ -6,7 +6,7 @@ export function EducationSection() {
     <MetadataSection title="Education">
       <EducationItem
         institution="General Assembly"
-        description="Full stack coding bootcamp"
+        description="Fullstack coding bootcamp"
         url="https://generalassemb.ly/"
       />
       <EducationItem
