@@ -9,6 +9,7 @@ import {StrictMode} from 'react'
 import {createRoot} from 'react-dom/client'
 
 import {Resume} from './components/custom/Resume'
+import {TooltipProvider} from './components/ui/tooltip'
 
 import '../styles/globals.css'
 
@@ -18,7 +19,9 @@ if (!elem) throw new Error('No root element found')
 
 const app = (
   <StrictMode>
-    <Resume />
+    <TooltipProvider>
+      <Resume />
+    </TooltipProvider>
   </StrictMode>
 )
 

@@ -1,6 +1,22 @@
 import type {WorkHistoryItem} from '../../types'
 
+import {Tooltip, TooltipContent, TooltipTrigger} from '../ui/tooltip'
 import {ExperienceItem} from './ExperienceItem'
+
+function WorkItemTootip({text, tooltip}: {text: string; tooltip: string}) {
+  return (
+    <Tooltip>
+      <TooltipTrigger asChild>
+        <span className="resume-tooltip border-b border-b-current border-dotted">
+          {text}
+        </span>
+      </TooltipTrigger>
+      <TooltipContent>
+        <span>{tooltip}</span>
+      </TooltipContent>
+    </Tooltip>
+  )
+}
 
 const workHistoryData: WorkHistoryItem[] = [
   {
@@ -10,36 +26,54 @@ const workHistoryData: WorkHistoryItem[] = [
     startYear: 2023,
     details: [
       {
-        highlight: "Revitalized Docker's design system",
-        content:
-          'with an agent-first architecture built on Shadcn, Tailwind UI, and a custom component registry.',
-      },
-      {
-        highlight: 'Created an end-to-end prototyping toolkit',
-        content:
-          '- a CLI scaffolder for consistent frontend stacks, custom AI skills for design system guardrails, and an internal deploy service letting designers ship live prototype URLs to engineers',
-      },
-      {
-        highlight: 'Led frontend architecture',
+        highlight: "Architected Docker's design system",
         content: (
           <>
-            for Docker Model Runner, transforming CLI-dependent tool into
-            production-ready UI that drove{' '}
-            <span className="italic">44% increase</span> in model downloads (90k
-            to 130k).
+            on an accessibility-first, agent-first foundation - Tailwind +
+            custom Shadcn registry, 129 components,{' '}
+            <WorkItemTootip
+              text="DTCG"
+              tooltip="Design Tokens Community Group"
+            />{' '}
+            tokens, 3 theme modes,{' '}
+            <WorkItemTootip
+              text="WCAG"
+              tooltip="Web Content Accessibility Guidelines"
+            />{' '}
+            AA/AAA contrast. Consumed today by Claude Code, Claude Desktop,
+            Codex CLI, Opencode, and Docker's internal coding agents.
           </>
         ),
       },
       {
-        highlight: 'Built cloud-native integration features for Docker Offload',
-        content:
-          ', implementing seamless context switching between local/cloud environments, GPU resource management, and deep-linking architecture for direct navigation from marketing pages.',
+        highlight: 'Sole frontend engineer on Docker Model Runner,',
+        content: (
+          <>
+            Docker's local LLM inference platform. Redesigned and rebuilt the
+            chat UI, including support for multimodal LLM responses.{' '}
+            <WorkItemTootip text="SSE" tooltip="Server Sent Events" /> + RxJS
+            streaming for model downloads - progress, failures, and concurrency
+            without UI thrashing. Drove{' '}
+            <span className="italic">44% increase</span> in downloads (90k →
+            130k).
+          </>
+        ),
       },
-      // {
-      //   highlight: 'Implemented real-time streaming for AI model downloads',
-      //   content:
-      //     'using SSE with RxJS throttling, enabling progress visualization for multi-GB LLM downloads without UI thrashing.',
-      // },
+      {
+        highlight: 'Shipped the MCP Catalog UI in Docker Desktop,',
+        content:
+          'an in-app directory to discover and install MCP servers. Parsed Go-generated markdown and contributed upstream Go fixes.',
+      },
+      {
+        highlight: 'Delivered cloud-native features for Docker Offload,',
+        content:
+          'including seamless local/cloud context switching and GPU resource management.',
+      },
+      {
+        highlight: 'Designed a reusable deep-link system across Electron',
+        content:
+          '(React renderer + Node main process), adoptable by any team. First shipped by Docker Offload to surface announcement dialogs from web marketing pages.',
+      },
     ],
   },
   {
@@ -51,33 +85,29 @@ const workHistoryData: WorkHistoryItem[] = [
     endYear: 2023,
     details: [
       {
-        highlight: 'Architected fullstack solutions for Coinbase Pay',
+        highlight: 'Owned fullstack delivery of Coinbase Pay (Onramp),',
         content:
-          '(Onramp), supporting 100+ cryptocurrencies and 60+ fiat currencies',
+          'a Next.js app supporting 100+ cryptocurrencies and 60+ fiat currencies.',
       },
       {
         highlight: 'Expanded market reach to 500M+ global Apple Pay users',
         content:
-          'by leading the end-to-end architecture and launch of Guest Checkout, enabling non-Coinbase users to onramp up to $500/week.',
+          'by architecting and launching Guest Checkout end-to-end, letting non-Coinbase users onramp up to $500/week.',
       },
-      // {
-      //   highlight: 'Led Guest Checkout and Apple Pay integration',
-      //   content:
-      //     'from inception to launch, architecting solutions that enabled non-Coinbase users to onramp up to $500/week, expanding market reach to 500M+ Apple Pay users globally.',
-      // },
       {
         highlight: 'Scaled payment volume to $100M+',
         content:
-          'by achieving 30% QoQ growth, while establishing the integration ecosystem from the ground up with 80+ partners.',
+          'at 30% QoQ growth, building the integration ecosystem from 0 to 80+ partners.',
+      },
+      {
+        highlight: 'Drove funnel conversion 20.1% → 28.3%,',
+        content:
+          'driving volume from $164M to $213M and scaling monthly transacting users from 0 to 200k.',
       },
       // {
       //   highlight: 'Drove 30% QoQ volume growth',
       //   content:
       //     '($164M to $213M) through frontend optimizations that improved funnel conversion rates from 20.1% to 28.3%.',
-      // },
-      // {
-      //   highlight: 'Drove payment volume to north of $100 million',
-      //   content: ''
       // },
       // {
       //   highlight: 'Went from 0 to north of 80 integration partners',
@@ -90,7 +120,7 @@ const workHistoryData: WorkHistoryItem[] = [
     ],
   },
   {
-    company: 'Facebook',
+    company: 'Meta',
     title: 'Senior Frontend Engineer',
     startMonth: 'May',
     startYear: 2019,
@@ -101,17 +131,26 @@ const workHistoryData: WorkHistoryItem[] = [
         highlight:
           'Designed and built ServiceLab Capacity Mode Regressions UI and Workloads UI',
         content:
-          'end-to-end, replacing manual Python config editing with intuitive interfaces that prevented million-dollar regressions at Facebook scale.',
+          'end-to-end, replacing manual Python config edits with UIs that prevented million-dollar regressions at Meta scale.',
       },
       {
-        highlight: 'Architected custom Recoil-based form library',
-        content:
-          'and Python-to-JSON config parser; modernized codebase by removing 1,224 lines of legacy code while migrating to Relay, GraphQL, and XDS.',
+        highlight: 'Engineered a custom Recoil-based form library',
+        content: (
+          <>
+            and Python-to-JSON config parser. Removed 1,224 lines of legacy code
+            while migrating to Relay, GraphQL, and{' '}
+            <WorkItemTootip
+              text="XDS"
+              tooltip="Internal design system at Meta"
+            />
+            .
+          </>
+        ),
       },
       {
-        highlight: 'Led cross-functional user research',
+        highlight: 'Led cross-functional user research across 4 offices,',
         content:
-          'across 4 offices, driving API design decisions and mentoring engineers on GraphQL/Relay, reducing implementation time by 50%.',
+          'driving API design decisions and mentoring engineers on GraphQL/Relay - cutting implementation time by 50%.',
       },
     ],
   },
@@ -124,9 +163,16 @@ const workHistoryData: WorkHistoryItem[] = [
     endYear: 2019,
     details: [],
     blurb: {
-      highlight: 'KYC - Entity Intelligence.',
-      content:
-        'Lead frontend development for a research intelligence app using React, Redux, SSR, and Node. Part of an agile team releasing bi-weekly to production.',
+      highlight: 'KYC - Anti Money Laundering.',
+      content: (
+        <>
+          One of 3 frontend engineers building a research intelligence app that
+          vetted entities through sanctions, beneficial ownership, and negative
+          news sentiment - using React, Redux,{' '}
+          <WorkItemTootip text="SSR" tooltip="Server Side Rendering" />, and
+          Node.
+        </>
+      ),
     },
   },
   {
@@ -138,9 +184,8 @@ const workHistoryData: WorkHistoryItem[] = [
     endYear: 2018,
     details: [],
     blurb: {
-      highlight: 'Leading the revolution of the shipping industry.',
       content:
-        'Created a custom React app generator in Node which was used to create all internal applications as well as fast prototyping. Deployed production code daily. Testing with Cypress.',
+        'Built a React app generator in Node used across all internal apps, set frontend standards, and mentored junior engineers - React, Redux, Cypress.',
     },
   },
   {
@@ -152,10 +197,8 @@ const workHistoryData: WorkHistoryItem[] = [
     endYear: 2017,
     details: [],
     blurb: {
-      highlight:
-        'Measuring the immeasurable - gaining insights on the digital performance of brands.',
       content:
-        'Used the Google Sheets API + Apps Script and transformed the way L2 performed manual data collection.',
+        'Built internal research tools in React + Redux on a Node/Express backend. Replaced company-wide Excel workflows with a Google Sheets API + Apps Script automation.',
     },
   },
   {
@@ -166,6 +209,12 @@ const workHistoryData: WorkHistoryItem[] = [
     endMonth: 'Jun',
     endYear: 2016,
     details: [],
+    // blurb: {
+    //   content:
+    //     // 'Delivered a living style guide to clients; created cross-browser custom email templates.',
+    //     'Built and maintained responsive applications serving millions of customers daily, working across local and global teams.',
+    // },
+    hideTitleUnderline: true,
   },
 ]
 
@@ -173,32 +222,15 @@ export function WorkHistory() {
   return (
     <main>
       <h2 className="pb-2 font-bold text-2xl">EXPERIENCE</h2>
-      {workHistoryData.map(
-        ({
-          company,
-          title,
-          startMonth,
-          startYear,
-          endMonth,
-          endYear,
-          details,
-          blurb,
-        }) => {
-          return (
-            <ExperienceItem
-              key={company}
-              company={company}
-              title={title}
-              startMonth={startMonth}
-              startYear={startYear}
-              endMonth={endMonth}
-              endYear={endYear}
-              details={details}
-              blurb={blurb}
-            />
-          )
-        }
-      )}
+      {workHistoryData.map(({company, ...workHistoryItem}) => {
+        return (
+          <ExperienceItem
+            key={company}
+            {...workHistoryItem}
+            company={company}
+          />
+        )
+      })}
     </main>
   )
 }

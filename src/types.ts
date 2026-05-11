@@ -28,4 +28,5 @@ export type WorkHistoryItem = {
   endYear?: number
   details: Content[]
   blurb?: Content
+  hideTitleUnderline?: boolean
 }
