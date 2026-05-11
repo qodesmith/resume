@@ -8,7 +8,7 @@ import {MetadataSection} from './MetadataSection'
 
 export function ContactSection() {
   return (
-    <MetadataSection title="Contact">
+    <MetadataSection title="Contact" tight>
       <ContactRow
         icon={
           <div className="h-4 w-4">
