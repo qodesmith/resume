@@ -49,9 +49,10 @@ const workHistoryData: WorkHistoryItem[] = [
         highlight: 'Sole frontend engineer on Docker Model Runner,',
         content: (
           <>
-            Docker's local LLM inference platform. Rebuilt the chat UI and SSE +
-            RxJS streaming for model downloads - progress, failures, and
-            concurrency without UI thrashing. Drove{' '}
+            Docker's local LLM inference platform. Redesigned and rebuilt the
+            chat UI, including support for multimodal LLM responses., SSE + RxJS
+            streaming for model downloads - progress, failures, and concurrency
+            without UI thrashing. Drove{' '}
             <span className="italic">44% increase</span> in downloads (90k →
             130k).
           </>
