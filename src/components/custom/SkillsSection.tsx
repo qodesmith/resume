@@ -13,9 +13,8 @@ export function SkillsSection() {
         TypeScript, React, Tailwind, Jotai, Redux, Relay, Shadcn, HTML, CSS
       </SkillItem>
       <SkillItem title="Backend">
-        Node.js, Bun, Hono, GraphQL, REST APIs
+        Node.js, Bun, Hono · GraphQL, REST APIs · SQLite, MongoDB, Postgres
       </SkillItem>
-      <SkillItem title="Data">SQLite, MongoDB, Postgres</SkillItem>
       <SkillItem title="Testing">
         Jest, Cypress, React Testing Library
       </SkillItem>
