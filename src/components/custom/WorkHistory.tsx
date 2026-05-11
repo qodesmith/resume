@@ -54,7 +54,7 @@ const workHistoryData: WorkHistoryItem[] = [
       {
         highlight: 'Architected fullstack solutions for Coinbase Pay',
         content:
-          '(Onramp), supporting 100+ cryptocurrencies and 60+ fiat currencies',
+          '(Onramp), supporting 100+ cryptocurrencies and 60+ fiat currencies.',
       },
       {
         highlight: 'Expanded market reach to 500M+ global Apple Pay users',

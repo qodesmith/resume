@@ -5,28 +5,28 @@ export function OpenSourceSection() {
   return (
     <MetadataSection title="Open Source">
       <OpenSourceItem
-        title="Create New App"
-        description="Bun-powered CLI for generating fullstack React apps"
-        url="https://github.com/qodesmith/create-new-app"
-        linkText="github.com/qodesmith/create-new-app"
+        title="AI Workflow"
+        description="8-phase agentic dev workflow - BDD specs, codebase audits, Ralph Loop execution, drift detection. Bun + TypeScript."
+        url="https://github.com/qodesmith/ai-workflow"
+        linkText="github.com/qodesmith/ai-workflow"
+      />
+      <OpenSourceItem
+        title="Unraid Cron Jobs"
+        description="Production cron jobs in Docker on Unraid - GitHub backup, YouTube downloads, and more."
+        url="https://github.com/qodesmith/unraid-cron-jobs"
+        linkText="github.com/qodesmith/unraid-cron-jobs"
       />
       <OpenSourceItem
         title="Beats Playlist"
-        description="Spotify, but full of Hip-Hop instrumentals"
+        description="Spotify, but only Hip-Hop instrumentals. Built on the Web Audio API."
         url="https://beats.aaroncordova.dev"
         linkText="beats.aaroncordova.dev"
       />
       <OpenSourceItem
-        title="Baseboard Configurator"
-        description="Optimize baseboard cuts, minimize waste"
-        url="https://github.com/qodesmith/baseboard-configurator"
-        linkText="github.com/qodesmith/baseboard-configurator"
-      />
-      <OpenSourceItem
-        title="Typer.js"
-        description="Datepicker in vanilla JS"
-        url="https://github.com/qodesmith/typer"
-        linkText="github.com/qodesmith/typer"
+        title="Create New App"
+        description="Bun-powered CLI for fullstack React apps - SQLite, Hono, Tanstack Router, Dockerized for Fly.io."
+        url="https://github.com/qodesmith/create-new-app"
+        linkText="https://github.com/qodesmith/create-new-app"
       />
     </MetadataSection>
   )
