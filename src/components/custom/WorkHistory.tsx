@@ -144,8 +144,7 @@ const workHistoryData: WorkHistoryItem[] = [
     details: [],
     blurb: {
       content:
-        // 'Replaced manual Excel-based data collection with a company-wide solution built on the Google Sheets API and Apps Script.',
-        "Replaced L2's manual Excel-based data collection with a company-wide solution built on the Google Sheets API and Apps Script, and built internal research tools in React + Redux on a Node/Express backend.",
+        'Built internal research tools in React + Redux on a Node/Express backend; replaced company-wide Excel workflows with a Google Sheets API + Apps Script automation.',
     },
   },
   {
@@ -159,7 +158,7 @@ const workHistoryData: WorkHistoryItem[] = [
     blurb: {
       content:
         // 'Delivered a living style guide to clients; created cross-browser custom email templates.',
-        'Built and maintained responsive applications serving millions of customers daily, working across local and global teams - JavaScript, jQuery, LESS, Bootstrap, Grunt.',
+        'Built and maintained responsive applications serving millions of customers daily, working across local and global teams.',
     },
   },
 ]
