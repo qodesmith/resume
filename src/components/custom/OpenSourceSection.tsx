@@ -24,7 +24,7 @@ export function OpenSourceSection() {
       />
       <OpenSourceItem
         title="Create New App"
-        description="Bun-powered CLI for fullstack React apps - SQLite, Hono, Tanstack Router, Dockerized for Fly.io."
+        description="Bun CLI that scaffolds fullstack React apps with end-to-end type-safe Hono RPC, structured SQLite-backed error telemetry, and turnkey Better Auth + Drizzle + Fly.io/LiteFS deployment."
         url="https://github.com/qodesmith/create-new-app"
         linkText="https://github.com/qodesmith/create-new-app"
       />

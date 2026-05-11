@@ -10,6 +10,11 @@ const workHistoryData: WorkHistoryItem[] = [
     startYear: 2023,
     details: [
       {
+        highlight: "Architected Docker's design system",
+        content:
+          "on an accessibility-first, agent-first foundation - Tailwind + custom Shadcn registry, 129 components, DTCG tokens, 3 theme modes, WCAG AA/AAA contrast. Consumed today by Claude Code, Claude Desktop, Codex CLI, Opencode, and Docker's internal coding agents.",
+      },
+      {
         highlight: 'Sole frontend engineer on Docker Model Runner,',
         content: (
           <>
@@ -20,11 +25,6 @@ const workHistoryData: WorkHistoryItem[] = [
             130k).
           </>
         ),
-      },
-      {
-        highlight: "Architected Docker's design system",
-        content:
-          "on an accessibility-first, agent-first foundation - Tailwind + custom Shadcn registry, 129 components, DTCG tokens, 3 theme modes, WCAG AA/AAA contrast. Consumed today by Claude Code, Claude Desktop, Codex CLI, Opencode, and Docker's internal coding agents.",
       },
       {
         highlight: 'Built the MCP Catalog UI in Docker Desktop,',
@@ -52,9 +52,9 @@ const workHistoryData: WorkHistoryItem[] = [
     endYear: 2023,
     details: [
       {
-        highlight: 'Architected fullstack solutions for Coinbase Pay',
+        highlight: 'Architected fullstack solutions for Coinbase Pay (Onramp),',
         content:
-          '(Onramp), supporting 100+ cryptocurrencies and 60+ fiat currencies.',
+          'a Next.js app supporting 100+ cryptocurrencies and 60+ fiat currencies.',
       },
       {
         highlight: 'Expanded market reach to 500M+ global Apple Pay users',
@@ -65,6 +65,11 @@ const workHistoryData: WorkHistoryItem[] = [
         highlight: 'Scaled payment volume to $100M+',
         content:
           'at 30% QoQ growth, building the integration ecosystem from 0 to 80+ partners.',
+      },
+      {
+        highlight: 'Improved funnel conversion 20.1% → 28.3%,',
+        content:
+          'driving volume from $164M to $213M and scaling monthly transacting users from 0 to 200k.',
       },
       // {
       //   highlight: 'Drove 30% QoQ volume growth',
