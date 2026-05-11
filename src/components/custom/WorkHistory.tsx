@@ -92,7 +92,7 @@ const workHistoryData: WorkHistoryItem[] = [
     ],
   },
   {
-    company: 'Facebook',
+    company: 'Meta',
     title: 'Senior Frontend Engineer',
     startMonth: 'May',
     startYear: 2019,
@@ -103,7 +103,7 @@ const workHistoryData: WorkHistoryItem[] = [
         highlight:
           'Designed and built ServiceLab Capacity Mode Regressions UI and Workloads UI',
         content:
-          'end-to-end, replacing manual Python config editing with intuitive interfaces that prevented million-dollar regressions at Facebook scale.',
+          'end-to-end, replacing manual Python config editing with intuitive interfaces that prevented million-dollar regressions at Meta scale.',
       },
       {
         highlight: 'Architected custom Recoil-based form library',
