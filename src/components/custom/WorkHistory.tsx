@@ -24,7 +24,35 @@ const workHistoryData: WorkHistoryItem[] = [
     title: 'Staff Frontend Engineer',
     startMonth: 'Jun',
     startYear: 2026,
-    details: [],
+    details: [
+      {
+        highlight: 'Turned the frontend into a revenue driver.',
+        content:
+          "Led Nova, Terzo's AI savings platform, securing a multi-year enterprise deal ~$1M in a single quarter.",
+      },
+      {
+        highlight:
+          "Rebuilt Terzo's entire frontend from zero as the first US hire.",
+        content:
+          'Replaced the legacy Angular stack with TanStack Start, React 19 and Bun, reached production in 37 days, and set the company standard for every future product.',
+      },
+      {
+        highlight: 'Made the company 8x faster.',
+        content:
+          'Cut feature delivery from 6 months to 3 weeks, so a strategy change became a sprint instead of a six-month bet. That speed let us redesign the flagship product 3 times in 3 months, including a full rewrite shipped to production in 7 days.',
+      },
+      {
+        highlight:
+          'Architected Mystique, the design system behind every Terzo product.',
+        content:
+          '80 components, 400 themeable tokens, a live token editor that turns design tweaks into production CSS, and 22 automated checks that keep every screen consistent and accessible.',
+      },
+      {
+        highlight: 'Built and scaled an AI-native frontend org.',
+        content:
+          "Hired 3 US engineers before my own start date, then multiplied the team's output: introduced an agent-driven Claude workflow, taught it through team talks, and founded Jarvis to ship shared skills and AI code review to every repo.",
+      },
+    ],
   },
   {
     company: 'Docker',
