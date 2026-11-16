@@ -24,6 +24,8 @@ const workHistoryData: WorkHistoryItem[] = [
     title: 'Senior Frontend Engineer',
     startMonth: 'Dec',
     startYear: 2023,
+    endMonth: 'Jun',
+    endYear: 2026,
     details: [
       {
         highlight: "Architected Docker's design system",
