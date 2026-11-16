@@ -57,7 +57,12 @@ const workHistoryData: WorkHistoryItem[] = [
       {
         highlight: 'Built an AI-native frontend team.',
         content:
-          'Led 6 engineers across US and India; hired 3 before my start date. Introduced agentic Claude workflows and founded Jarvis to ship skills and AI code review to every repo.',
+          'Led 6 engineers across US and India, hiring 3 before my start date, and trained the team on agentic Claude workflows.',
+      },
+      {
+        highlight: 'Pioneered AI code review at Terzo.',
+        content:
+          'Built the first Claude PR-review bot, whose injection-safe design now powers a 5-agent reviewer on every frontend PR.',
       },
     ],
   },
