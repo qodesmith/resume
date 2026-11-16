@@ -13,8 +13,10 @@ export function ExperienceItem({
   blurb,
   hideTitleUnderline,
 }: WorkHistoryItem) {
+  const hasContent = details.length > 0 || !!blurb
+
   return (
-    <article className="pb-3 text-xs last:pb-0">
+    <article className={cn('text-xs last:pb-0', hasContent ? 'pb-3' : 'pb-0')}>
       <div
         className={cn(
           'flex justify-between text-sm',
@@ -31,32 +33,34 @@ export function ExperienceItem({
         <span>{title}</span>
       </div>
 
-      <div className="pt-0.5">
-        {details.length > 0 && (
-          <ul>
-            {details.map(({highlight, content}, i) => {
-              return (
-                // biome-ignore lint/suspicious/noArrayIndexKey: it's ok
-                <li key={i} className="pb-1 last:pb-0">
-                  {highlight ? (
-                    <>
-                      <span className="font-bold italic">{highlight}</span>{' '}
-                      {content}
-                    </>
-                  ) : (
-                    content
-                  )}
-                </li>
-              )
-            })}
-          </ul>
-        )}
-        {details.length === 0 && blurb && (
-          <>
-            <span className="italic">{blurb.highlight}</span> {blurb.content}
-          </>
-        )}
-      </div>
+      {hasContent && (
+        <div className="pt-0.5">
+          {details.length > 0 && (
+            <ul>
+              {details.map(({highlight, content}, i) => {
+                return (
+                  // biome-ignore lint/suspicious/noArrayIndexKey: it's ok
+                  <li key={i} className="pb-1 last:pb-0">
+                    {highlight ? (
+                      <>
+                        <span className="font-bold italic">{highlight}</span>{' '}
+                        {content}
+                      </>
+                    ) : (
+                      content
+                    )}
+                  </li>
+                )
+              })}
+            </ul>
+          )}
+          {details.length === 0 && blurb && (
+            <>
+              <span className="italic">{blurb.highlight}</span> {blurb.content}
+            </>
+          )}
+        </div>
+      )}
     </article>
   )
 }
