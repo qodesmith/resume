@@ -20,28 +20,78 @@ function WorkItemTootip({text, tooltip}: {text: string; tooltip: string}) {
 
 const workHistoryData: WorkHistoryItem[] = [
   {
-    company: 'Docker',
-    title: 'Senior Frontend Engineer',
-    startMonth: 'Dec',
-    startYear: 2023,
+    company: 'Terzo',
+    title: 'Staff Frontend Engineer',
+    startMonth: 'Jun',
+    startYear: 2026,
     details: [
       {
-        highlight: "Architected Docker's design system",
+        highlight: 'Turned the frontend into a revenue driver.',
+        content:
+          "Led Nova, Terzo's AI savings platform, which won a multi-year enterprise deal: ~$1M in one quarter.",
+      },
+      {
+        highlight:
+          "Rebuilt Terzo's frontend from zero as founding US engineer.",
+        content:
+          'Replaced legacy Angular with TanStack Start, React 19 and Bun; live in 37 days and now the company standard.',
+      },
+      {
+        highlight: 'Cut feature delivery from 6 months to 3 weeks.',
+        content:
+          'Enabled 3 full redesigns of the flagship product in 3 months, including a rewrite shipped in 7 days.',
+      },
+      {
+        highlight:
+          'Architected Mystique, the design system behind every Terzo product.',
         content: (
           <>
-            on an accessibility-first, agent-first foundation - Tailwind +
-            custom Shadcn registry, 129 components,{' '}
-            <WorkItemTootip
-              text="DTCG"
-              tooltip="Design Tokens Community Group"
-            />{' '}
-            tokens, 3 theme modes,{' '}
+            Custom typography and layout primitives,{' '}
             <WorkItemTootip
               text="WCAG"
               tooltip="Web Content Accessibility Guidelines"
             />{' '}
-            AA/AAA contrast. Consumed today by Claude Code, Claude Desktop,
-            Codex CLI, Opencode, and Docker's internal coding agents.
+            2.1 AA tokens, a live token editor that outputs production CSS, and
+            an AI skill that teaches agents to build on-system UI.
+          </>
+        ),
+      },
+      {
+        highlight: 'Built an AI-native frontend team.',
+        content:
+          'Led 6 engineers across US and India, hiring 3 before my start date, and trained the team on agentic Claude workflows.',
+      },
+      {
+        highlight: 'Pioneered AI code review at Terzo.',
+        content:
+          'Built the first Claude PR-review bot, whose injection-safe design now powers a 5-agent reviewer on every frontend PR.',
+      },
+    ],
+  },
+  {
+    company: 'Docker',
+    title: 'Senior Frontend Engineer',
+    startMonth: 'Dec',
+    startYear: 2023,
+    endMonth: 'Jun',
+    endYear: 2026,
+    details: [
+      {
+        highlight: "Architected Docker's agent-first design system:",
+        content: (
+          <>
+            129 components,{' '}
+            <WorkItemTootip
+              text="DTCG"
+              tooltip="Design Tokens Community Group"
+            />{' '}
+            tokens,{' '}
+            <WorkItemTootip
+              text="WCAG"
+              tooltip="Web Content Accessibility Guidelines"
+            />{' '}
+            AA/AAA. Built for coding agents: Claude Code, Codex, & Docker's
+            internal agents.
           </>
         ),
       },
@@ -49,30 +99,18 @@ const workHistoryData: WorkHistoryItem[] = [
         highlight: 'Sole frontend engineer on Docker Model Runner,',
         content: (
           <>
-            Docker's local LLM inference platform. Redesigned and rebuilt the
-            chat UI, including support for multimodal LLM responses.{' '}
+            Docker's local LLM platform. Rebuilt the multimodal chat UI and{' '}
             <WorkItemTootip text="SSE" tooltip="Server Sent Events" /> + RxJS
-            streaming for model downloads - progress, failures, and concurrency
-            without UI thrashing. Drove{' '}
+            download streaming, driving a{' '}
             <span className="italic">44% increase</span> in downloads (90k →
             130k).
           </>
         ),
       },
       {
-        highlight: 'Shipped the MCP Catalog UI in Docker Desktop,',
+        highlight: 'Shipped the MCP Catalog in Docker Desktop,',
         content:
-          'an in-app directory to discover and install MCP servers. Parsed Go-generated markdown and contributed upstream Go fixes.',
-      },
-      {
-        highlight: 'Delivered cloud-native features for Docker Offload,',
-        content:
-          'including seamless local/cloud context switching and GPU resource management.',
-      },
-      {
-        highlight: 'Designed a reusable deep-link system across Electron',
-        content:
-          '(React renderer + Node main process), adoptable by any team. First shipped by Docker Offload to surface announcement dialogs from web marketing pages.',
+          "plus Docker Offload's local/cloud GPU switching and a cross-team Electron deep-link system.",
       },
     ],
   },
@@ -95,14 +133,12 @@ const workHistoryData: WorkHistoryItem[] = [
           'by architecting and launching Guest Checkout end-to-end, letting non-Coinbase users onramp up to $500/week.',
       },
       {
-        highlight: 'Scaled payment volume to $100M+',
-        content:
-          'at 30% QoQ growth, building the integration ecosystem from 0 to 80+ partners.',
+        highlight: 'Built the integration ecosystem from 0 to 80+ partners,',
+        content: 'scaling to 200k monthly transacting users.',
       },
       {
-        highlight: 'Drove funnel conversion 20.1% → 28.3%,',
-        content:
-          'driving volume from $164M to $213M and scaling monthly transacting users from 0 to 200k.',
+        highlight: 'Lifted funnel conversion 20.1% → 28.3%,',
+        content: 'driving 30% QoQ volume growth ($164M → $213M).',
       },
       // {
       //   highlight: 'Drove 30% QoQ volume growth',
@@ -183,10 +219,11 @@ const workHistoryData: WorkHistoryItem[] = [
     endMonth: 'Jun',
     endYear: 2018,
     details: [],
-    blurb: {
-      content:
-        'Built a React app generator in Node used across all internal apps, set frontend standards, and mentored junior engineers - React, Redux, Cypress.',
-    },
+    // blurb: {
+    //   content:
+    //     'Built a React app generator in Node used across all internal apps, set frontend standards, and mentored junior engineers - React, Redux, Cypress.',
+    // },
+    hideTitleUnderline: true,
   },
   {
     company: 'L2, Inc',
@@ -196,10 +233,11 @@ const workHistoryData: WorkHistoryItem[] = [
     endMonth: 'May',
     endYear: 2017,
     details: [],
-    blurb: {
-      content:
-        'Built internal research tools in React + Redux on a Node/Express backend. Replaced company-wide Excel workflows with a Google Sheets API + Apps Script automation.',
-    },
+    // blurb: {
+    //   content:
+    //     'Built internal research tools in React + Redux on a Node/Express backend. Replaced company-wide Excel workflows with a Google Sheets API + Apps Script automation.',
+    // },
+    hideTitleUnderline: true,
   },
   {
     company: 'Accenture',

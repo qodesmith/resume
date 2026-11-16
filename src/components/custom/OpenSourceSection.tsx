@@ -5,17 +5,17 @@ export function OpenSourceSection() {
   return (
     <MetadataSection title="Open Source">
       <OpenSourceItem
-        title="AI Workflow"
-        description="8-phase agentic dev workflow - BDD specs, codebase audits, Ralph Loop execution, drift detection. Bun + TypeScript."
-        url="https://github.com/qodesmith/ai-workflow"
-        linkText="github.com/qodesmith/ai-workflow"
+        title="Unimatrix Zero"
+        description="AI chat tree on a canvas: fork any reply into parallel Claude & ChatGPT threads, no API keys. Electron, Claude Agent SDK, Codex, React Flow."
+        url="https://github.com/qodesmith/unimatrix-zero"
+        linkText="github.com/qodesmith/unimatrix-zero"
       />
-      <OpenSourceItem
+      {/* <OpenSourceItem
         title="Unraid Cron Jobs"
         description="Production cron jobs in Docker on Unraid - GitHub backup, YouTube downloads, and more."
         url="https://github.com/qodesmith/unraid-cron-jobs"
         linkText="github.com/qodesmith/unraid-cron-jobs"
-      />
+      /> */}
       <OpenSourceItem
         title="Beats Playlist"
         description="Spotify, but only Hip-Hop instrumentals. Built on the Web Audio API."
@@ -24,9 +24,9 @@ export function OpenSourceSection() {
       />
       <OpenSourceItem
         title="Create New App"
-        description="Bun CLI that scaffolds fullstack React apps with end-to-end type-safe Hono RPC, structured SQLite-backed error telemetry, and turnkey Better Auth + Drizzle + Fly.io/LiteFS deployment."
+        description="Bun CLI that scaffolds fullstack React apps: type-safe Hono RPC, SQLite error telemetry, Better Auth, Drizzle, and Fly.io deploys."
         url="https://github.com/qodesmith/create-new-app"
-        linkText="https://github.com/qodesmith/create-new-app"
+        linkText="github.com/qodesmith/create-new-app"
       />
     </MetadataSection>
   )
