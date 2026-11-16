@@ -5,10 +5,10 @@ export function OpenSourceSection() {
   return (
     <MetadataSection title="Open Source">
       <OpenSourceItem
-        title="AI Workflow"
-        description="8-phase agentic dev workflow - BDD specs, codebase audits, Ralph Loop execution, drift detection. Bun + TypeScript."
-        url="https://github.com/qodesmith/ai-workflow"
-        linkText="github.com/qodesmith/ai-workflow"
+        title="Unimatrix Zero"
+        description="Branching AI chat on a canvas: fork any reply into parallel Claude and ChatGPT threads, no API keys. Electron, Agent SDK, Codex, React Flow."
+        url="https://github.com/qodesmith/unimatrix-zero"
+        linkText="github.com/qodesmith/unimatrix-zero"
       />
       <OpenSourceItem
         title="Unraid Cron Jobs"
