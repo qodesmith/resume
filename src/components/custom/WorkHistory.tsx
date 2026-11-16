@@ -42,7 +42,8 @@ const workHistoryData: WorkHistoryItem[] = [
           'Enabled 3 full redesigns of the flagship product in 3 months, including a rewrite shipped in 7 days.',
       },
       {
-        highlight: "Architected Mystique, Terzo's design system.",
+        highlight:
+          'Architected Mystique, the design system behind every Terzo product.',
         content: (
           <>
             Custom typography and layout primitives,{' '}
@@ -89,7 +90,7 @@ const workHistoryData: WorkHistoryItem[] = [
               text="WCAG"
               tooltip="Web Content Accessibility Guidelines"
             />{' '}
-            AA/AAA. Adopted by Claude Code, Claude Desktop, Codex CLI and
+            AA/AAA. Built for consumption by Claude Code, Codex, & Docker's
             internal agents.
           </>
         ),
@@ -137,9 +138,9 @@ const workHistoryData: WorkHistoryItem[] = [
           'at 30% QoQ growth, building the integration ecosystem from 0 to 80+ partners.',
       },
       {
-        highlight: 'Drove funnel conversion 20.1% → 28.3%,',
+        highlight: 'Lifted funnel conversion 20.1% → 28.3%,',
         content:
-          'driving volume from $164M to $213M and scaling monthly transacting users from 0 to 200k.',
+          'growing volume from $164M to $213M and monthly transacting users from 0 to 200k.',
       },
       // {
       //   highlight: 'Drove 30% QoQ volume growth',

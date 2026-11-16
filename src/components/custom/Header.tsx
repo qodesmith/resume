@@ -26,9 +26,11 @@ export function Header() {
       <div className="ml-auto w-96 text-right">
         <p className="tracking-[4px]">STAFF FRONTEND ENGINEER</p>
         <p className="text-xs">
-          I build the platform, the team, and the revenue. {years}+ years
-          shipping AI-native frontends at Terzo, AI tooling at Docker, payments
-          at Coinbase, and infrastructure UIs at Meta.
+          <span className="block">
+            I build the platform, the team, and the revenue.
+          </span>
+          {years}+ years of frontend leadership: AI products at Terzo &amp;
+          Docker, payments at Coinbase, and infrastructure UIs at Meta.
         </p>
       </div>
     </header>
