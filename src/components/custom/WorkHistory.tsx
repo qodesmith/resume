@@ -28,10 +28,11 @@ const workHistoryData: WorkHistoryItem[] = [
       {
         highlight: 'Turned the frontend into a revenue driver.',
         content:
-          "Led Nova, Terzo's AI savings platform, which won a multi-year enterprise deal: ~$1M in one quarter, 75%+ of Q4 bookings.",
+          "Led Nova, Terzo's AI savings platform, which won a multi-year enterprise deal: ~$1M in one quarter.",
       },
       {
-        highlight: "Rebuilt Terzo's frontend from zero as first US hire.",
+        highlight:
+          "Rebuilt Terzo's frontend from zero as founding US engineer.",
         content:
           'Replaced legacy Angular with TanStack Start, React 19 and Bun; live in 37 days and now the company standard.',
       },

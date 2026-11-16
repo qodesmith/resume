@@ -6,19 +6,26 @@ export function SkillsSection() {
   return (
     <MetadataSection title="Skills">
       <SkillItem title="AI">
-        MCP (Model Context Protocol), agentic UIs, Anthropic API, Claude SDK,
-        LLM streaming (SSE, RxJS), Claude Code CLI
+        Claude Agent SDK, Anthropic API, MCP, multi-agent code review, agent
+        skills, prompt-injection defense, LLM streaming (SSE)
       </SkillItem>
       <SkillItem title="Frontend">
-        TypeScript, React, Tailwind, Jotai, Redux, Relay, Shadcn, HTML, CSS
+        TypeScript, React 19, TanStack Start/Query, Next.js, Electron, Tailwind,
+        Shadcn, Jotai, Relay
+      </SkillItem>
+      <SkillItem title="Design Systems">
+        Design tokens (DTCG), WCAG 2.1 AA, theming, agent-ready component APIs
       </SkillItem>
       <SkillItem title="Backend">
-        Bun, Node.js, Hono · GraphQL, REST APIs · SQLite, MongoDB, Postgres
+        Bun, Node.js, Hono · GraphQL, REST APIs · SQLite, Drizzle, MongoDB,
+        Postgres
       </SkillItem>
       <SkillItem title="Testing">
-        Jest, Cypress, React Testing Library
+        Vitest, Playwright, React Testing Library, Cypress
       </SkillItem>
-      <SkillItem title="Tooling">Oxlint, Oxfmt, Docker, Git</SkillItem>
+      <SkillItem title="Tooling">
+        Oxlint, Oxfmt, Docker, Claude Code, Codex
+      </SkillItem>
     </MetadataSection>
   )
 }
