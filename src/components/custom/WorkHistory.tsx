@@ -90,7 +90,7 @@ const workHistoryData: WorkHistoryItem[] = [
               text="WCAG"
               tooltip="Web Content Accessibility Guidelines"
             />{' '}
-            AA/AAA. Built for consumption by Claude Code, Codex, & Docker's
+            AA/AAA. Built for coding agents: Claude Code, Codex, & Docker's
             internal agents.
           </>
         ),
@@ -133,14 +133,12 @@ const workHistoryData: WorkHistoryItem[] = [
           'by architecting and launching Guest Checkout end-to-end, letting non-Coinbase users onramp up to $500/week.',
       },
       {
-        highlight: 'Scaled payment volume to $100M+',
-        content:
-          'at 30% QoQ growth, building the integration ecosystem from 0 to 80+ partners.',
+        highlight: 'Built the integration ecosystem from 0 to 80+ partners,',
+        content: 'scaling to 200k monthly transacting users.',
       },
       {
         highlight: 'Lifted funnel conversion 20.1% → 28.3%,',
-        content:
-          'growing volume from $164M to $213M and monthly transacting users from 0 to 200k.',
+        content: 'driving 30% QoQ volume growth ($164M → $213M).',
       },
       // {
       //   highlight: 'Drove 30% QoQ volume growth',
