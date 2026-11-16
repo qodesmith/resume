@@ -28,29 +28,36 @@ const workHistoryData: WorkHistoryItem[] = [
       {
         highlight: 'Turned the frontend into a revenue driver.',
         content:
-          "Led Nova, Terzo's AI savings platform, securing a multi-year enterprise deal ~$1M in a single quarter.",
+          "Led Nova, Terzo's AI savings platform, which won a multi-year enterprise deal: ~$1M in one quarter, 75%+ of Q4 bookings.",
       },
       {
-        highlight:
-          "Rebuilt Terzo's entire frontend from zero as the first US hire.",
+        highlight: "Rebuilt Terzo's frontend from zero as first US hire.",
         content:
-          'Replaced the legacy Angular stack with TanStack Start, React 19 and Bun, reached production in 37 days, and set the company standard for every future product.',
+          'Replaced legacy Angular with TanStack Start, React 19 and Bun; live in 37 days and now the company standard.',
       },
       {
-        highlight: 'Made the company 8x faster.',
+        highlight: 'Cut feature delivery from 6 months to 3 weeks.',
         content:
-          'Cut feature delivery from 6 months to 3 weeks, so a strategy change became a sprint instead of a six-month bet. That speed let us redesign the flagship product 3 times in 3 months, including a full rewrite shipped to production in 7 days.',
+          'Enabled 3 full redesigns of the flagship product in 3 months, including a rewrite shipped in 7 days.',
       },
       {
-        highlight:
-          'Architected Mystique, the design system behind every Terzo product.',
-        content:
-          '80 components, 400 themeable tokens, a live token editor that turns design tweaks into production CSS, and 22 automated checks that keep every screen consistent and accessible.',
+        highlight: "Architected Mystique, Terzo's design system.",
+        content: (
+          <>
+            Custom typography and layout primitives,{' '}
+            <WorkItemTootip
+              text="WCAG"
+              tooltip="Web Content Accessibility Guidelines"
+            />{' '}
+            2.1 AA tokens, a live token editor that outputs production CSS, and
+            an AI skill that teaches agents to build on-system UI.
+          </>
+        ),
       },
       {
-        highlight: 'Built and scaled an AI-native frontend org.',
+        highlight: 'Built an AI-native frontend team.',
         content:
-          "Hired 3 US engineers before my own start date, then multiplied the team's output: introduced an agent-driven Claude workflow, taught it through team talks, and founded Jarvis to ship shared skills and AI code review to every repo.",
+          'Led 6 engineers across US and India; hired 3 before my start date. Introduced agentic Claude workflows and founded Jarvis to ship skills and AI code review to every repo.',
       },
     ],
   },
