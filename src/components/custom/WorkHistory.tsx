@@ -70,22 +70,21 @@ const workHistoryData: WorkHistoryItem[] = [
     endYear: 2026,
     details: [
       {
-        highlight: "Architected Docker's design system",
+        highlight: "Architected Docker's agent-first design system:",
         content: (
           <>
-            on an accessibility-first, agent-first foundation - Tailwind +
-            custom Shadcn registry, 129 components,{' '}
+            129 components,{' '}
             <WorkItemTootip
               text="DTCG"
               tooltip="Design Tokens Community Group"
             />{' '}
-            tokens, 3 theme modes,{' '}
+            tokens,{' '}
             <WorkItemTootip
               text="WCAG"
               tooltip="Web Content Accessibility Guidelines"
             />{' '}
-            AA/AAA contrast. Consumed today by Claude Code, Claude Desktop,
-            Codex CLI, Opencode, and Docker's internal coding agents.
+            AA/AAA. Adopted by Claude Code, Claude Desktop, Codex CLI and
+            internal agents.
           </>
         ),
       },
@@ -93,30 +92,18 @@ const workHistoryData: WorkHistoryItem[] = [
         highlight: 'Sole frontend engineer on Docker Model Runner,',
         content: (
           <>
-            Docker's local LLM inference platform. Redesigned and rebuilt the
-            chat UI, including support for multimodal LLM responses.{' '}
+            Docker's local LLM platform. Rebuilt the multimodal chat UI and{' '}
             <WorkItemTootip text="SSE" tooltip="Server Sent Events" /> + RxJS
-            streaming for model downloads - progress, failures, and concurrency
-            without UI thrashing. Drove{' '}
+            download streaming, driving a{' '}
             <span className="italic">44% increase</span> in downloads (90k →
             130k).
           </>
         ),
       },
       {
-        highlight: 'Shipped the MCP Catalog UI in Docker Desktop,',
+        highlight: 'Shipped the MCP Catalog in Docker Desktop,',
         content:
-          'an in-app directory to discover and install MCP servers. Parsed Go-generated markdown and contributed upstream Go fixes.',
-      },
-      {
-        highlight: 'Delivered cloud-native features for Docker Offload,',
-        content:
-          'including seamless local/cloud context switching and GPU resource management.',
-      },
-      {
-        highlight: 'Designed a reusable deep-link system across Electron',
-        content:
-          '(React renderer + Node main process), adoptable by any team. First shipped by Docker Offload to surface announcement dialogs from web marketing pages.',
+          "plus Docker Offload's local/cloud GPU switching and a cross-team Electron deep-link system.",
       },
     ],
   },
