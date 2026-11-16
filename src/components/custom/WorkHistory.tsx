@@ -183,10 +183,11 @@ const workHistoryData: WorkHistoryItem[] = [
     endMonth: 'Jun',
     endYear: 2018,
     details: [],
-    blurb: {
-      content:
-        'Built a React app generator in Node used across all internal apps, set frontend standards, and mentored junior engineers - React, Redux, Cypress.',
-    },
+    // blurb: {
+    //   content:
+    //     'Built a React app generator in Node used across all internal apps, set frontend standards, and mentored junior engineers - React, Redux, Cypress.',
+    // },
+    hideTitleUnderline: true,
   },
   {
     company: 'L2, Inc',
@@ -196,10 +197,11 @@ const workHistoryData: WorkHistoryItem[] = [
     endMonth: 'May',
     endYear: 2017,
     details: [],
-    blurb: {
-      content:
-        'Built internal research tools in React + Redux on a Node/Express backend. Replaced company-wide Excel workflows with a Google Sheets API + Apps Script automation.',
-    },
+    // blurb: {
+    //   content:
+    //     'Built internal research tools in React + Redux on a Node/Express backend. Replaced company-wide Excel workflows with a Google Sheets API + Apps Script automation.',
+    // },
+    hideTitleUnderline: true,
   },
   {
     company: 'Accenture',
