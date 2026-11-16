@@ -20,6 +20,13 @@ function WorkItemTootip({text, tooltip}: {text: string; tooltip: string}) {
 
 const workHistoryData: WorkHistoryItem[] = [
   {
+    company: 'Terzo',
+    title: 'Staff Frontend Engineer',
+    startMonth: 'Jun',
+    startYear: 2026,
+    details: [],
+  },
+  {
     company: 'Docker',
     title: 'Senior Frontend Engineer',
     startMonth: 'Dec',

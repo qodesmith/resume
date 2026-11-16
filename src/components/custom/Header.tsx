@@ -24,7 +24,7 @@ export function Header() {
         <div>CORDOVA</div>
       </div>
       <div className="ml-auto w-96 text-right">
-        <p className="tracking-[4px]">SENIOR FRONTEND ENGINEER</p>
+        <p className="tracking-[4px]">STAFF FRONTEND ENGINEER</p>
         <p className="text-xs">
           {years}+ years turning complex backends into intuitive frontends.
           TypeScript expert who's built AI tooling at Docker, payment platforms
